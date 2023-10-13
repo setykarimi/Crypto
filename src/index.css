@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'YekanBakh';
+  src: url(./assets/fonts/YekanBakhFaNum-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'YekanBakh-bold';
+  src: url(./assets/fonts/YekanBakhFaNum-Bold.ttf);
+}
+
+body, html{
+  font-family: 'YekanBakh';
+  direction: rtl;
+}
+
+.font-bold{
+  font-family: 'YekanBakh-bold';
+}
