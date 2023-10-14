@@ -11,6 +11,10 @@
   font-family: 'YekanBakh-bold';
   src: url(./assets/fonts/YekanBakhFaNum-Bold.ttf);
 }
+@font-face {
+  font-family: 'YekanBakh-light';
+  src: url(./assets/fonts/YekanBakhFaNum-Light.ttf);
+}
 
 body, html{
   font-family: 'YekanBakh';
@@ -19,4 +23,7 @@ body, html{
 
 .font-bold{
   font-family: 'YekanBakh-bold';
+}
+.font-light{
+  font-family: 'YekanBakh-light';
 }
