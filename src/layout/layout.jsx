@@ -4,7 +4,7 @@ import Navbar from './navbar'
 
 export default function Layout({children}) {
   return (
-    <div className='container'>
+    <div className='md:container bg-blue-primary'>
         <Navbar />
         {children}
         <Footer />
