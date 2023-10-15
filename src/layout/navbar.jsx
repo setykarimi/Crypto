@@ -31,7 +31,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="max-w-[1220px] mx-auto py-4 px-8 mt-4 rounded-2xl flex gap-8 items-center bg-white">
+    <div className="inner-container mx-auto py-4 px-8 mt-4 rounded-2xl flex gap-8 items-center bg-white z-10 sticky">
       <div className="logo">
         <img src={Logo} alt="logo" />
       </div>
