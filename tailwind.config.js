@@ -19,7 +19,8 @@ module.exports = {
           400: '#737B7F'
         },
         blue:{
-          primary: '#2150F5'
+          primary: '#2150F5',
+          800: "#1635A3"
         },
         red:{
           primary: '#F53A21'
@@ -33,7 +34,22 @@ module.exports = {
         14: '14px',
       },
       screens: {
-        laptop: '1300px'
+        'sm': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'md': '768px',
+        // => @media (min-width: 768px) { ... }
+  
+        'lg': '1100px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'xl': '1300px',
+        // => @media (min-width: 1280px) { ... }
+  
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+
+        
       }
     },
   },
