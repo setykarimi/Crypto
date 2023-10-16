@@ -10,7 +10,7 @@ export default function BannerHome() {
     >
       <div className="inner-container mx-auto flex md:flex-row flex-col-reverse md:justify-between items-center md:px-0 px-8">
         <ContentTitle />
-        <img src={bannerHomeWallet} alt="wallet" className="laptop:w-fit lg:w-96 md:w-80 w-56 mr-auto"/>
+        <img src={bannerHomeWallet} alt="wallet" className="xl:w-fit lg:w-96 md:w-80 w-56 mr-auto"/>
       </div>
       <button className="absolute bottom-0 mx-auto left-0 right-0 w-fit px-8 py-2">
         <span className="xl:h-8 h-4 bg-gray-400 w-[2px] rounded-full block"></span>
