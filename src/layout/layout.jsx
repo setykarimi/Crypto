@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from './footer'
 import Navbar from './navbar'
-import BannerHome from '../components/banner/bannerHome'
+import BannerHome from 'components/banner/bannerHome'
 
 export default function Layout({children}) {
   return (
