@@ -1,6 +1,6 @@
 import React from "react";
-import bannerHomeBg from "../../assets/images/banner/bannerHomeBg.svg";
-import bannerHomeWallet from "../../assets/images/banner/bannerHomeWallet.svg";
+import bannerHomeBg from "images/banner/bannerHomeBg.svg";
+import bannerHomeWallet from "images/banner/bannerHomeWallet.svg";
 
 export default function BannerHome() {
   return (
