@@ -8,7 +8,7 @@ export default function BannerHome() {
       className="-mt-[5.6rem] z-0 relative xl:pb-28 pb-16 lg:px-0 px-4"
       style={{ background: `url(${bannerHomeBg}) no-repeat center bottom`, backgroundSize: 'cover' }}
     >
-      <div className="inner-container mx-auto flex md:flex-row flex-col-reverse md:justify-between items-center md:px-0 px-8">
+      <div className="inner-container mx-auto flex md:flex-row flex-col-reverse md:justify-between items-center md:px-0 px-2">
         <ContentTitle />
         <img src={bannerHomeWallet} alt="wallet" className="xl:w-fit lg:w-96 md:w-80 w-56 mr-auto"/>
       </div>
