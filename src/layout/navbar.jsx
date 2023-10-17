@@ -57,9 +57,9 @@ export default function Navbar() {
       <button className="lg:hidden block" onClick={showMenuHandler}>
         <HiMenu className="text-blue-800" size={22} />
       </button>
-      <div className="logo flex lg:mr-0 mr-auto lg:ml-0 -ml-10">
+      <Link to="/" className="logo flex lg:mr-0 mr-auto lg:ml-0 -ml-10">
         <img src={Logo} alt="logo" className="lg:w-auto w-20" />
-      </div>
+      </Link>
 
       <div
         className={`${
@@ -68,7 +68,7 @@ export default function Navbar() {
             : "hidden lg:block"
         } `}
       >
-        <div className="flex lg:flex-row flex-col gap-4 overflow-hidden lg:w-auto w-48">
+        <div className="flex lg:flex-row flex-col gap-4 overflow-hidden lg:w-auto w-54">
           <button onClick={closeMenuHandler} className="lg:hidden block mb-8"><FaSignOutAlt className="text-blue-primary" size={32}/></button>
           {menus.map(({ title, to, icon }) => (
             <NavLink
