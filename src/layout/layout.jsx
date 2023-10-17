@@ -1,15 +1,22 @@
-import React from 'react'
-import Footer from './footer'
-import Navbar from './navbar'
-import BannerHome from 'components/banner/bannerHome'
+import { Outlet, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import Footer from "./footer";
+import Navbar from "./navbar";
 
-export default function Layout({children}) {
-  return (
-    <div className='md:container'>
-        <Navbar />
-        <BannerHome />
-        {children}
-        <Footer />
-    </div>
-  )
+const Layout = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      }, [pathname]);
+    return ( 
+        <div className="container">
+            <Navbar />
+            <main>
+                <Outlet />
+            </main>
+            <Footer />
+        </div>
+     );
 }
+ 
+export default Layout;
