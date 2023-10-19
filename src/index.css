@@ -12,8 +12,12 @@
   src: url(./assets/fonts/YekanBakhFaNum-Bold.ttf);
 }
 @font-face {
+  font-family: 'YekanBakh-semiBold';
+  src: url(./assets/fonts/YekanBakhFaNum-SemiBold.ttf);
+}
+@font-face {
   font-family: 'YekanBakh-extraBold';
-  src: url(./assets/fonts/YekanBakhFaNum-Bold.ttf);
+  src: url(./assets/fonts/YekanBakhFaNum-ExtraBold.ttf);
 }
 @font-face {
   font-family: 'YekanBakh-light';
@@ -34,6 +38,9 @@ body, html{
 }
 .font-extraBold{
   font-family: 'YekanBakh-extraBold';
+}
+.font-semiBold{
+  font-family: 'YekanBakh-semiBold';
 }
 .font-light{
   font-family: 'YekanBakh-light';
