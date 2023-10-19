@@ -1,10 +1,9 @@
-import BannerHome from "components/banner/bannerHome";
-import React from "react";
+import HomeBanner from "components/pages/home/banner/bannerHome";
 
 export default function HomePage() {
   return (
     <>
-      <BannerHome />
+      <HomeBanner />
     </>
   );
 }
