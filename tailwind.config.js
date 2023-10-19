@@ -16,11 +16,15 @@ module.exports = {
       colors:{
         gray:{
           300: '#99A3A9',
-          400: '#737B7F'
+          400: '#737B7F',
+          800: "#2E3133"
         },
         blue:{
           primary: '#2150F5',
-          800: "#1635A3"
+          100: "#DAE9F0",
+          700: "#1C43CC",
+          800: "#1635A3",
+          
         },
         red:{
           primary: '#F53A21'
@@ -28,6 +32,12 @@ module.exports = {
         yellow: {
           primary: "#FFF110"
         },
+        orange: {
+          primary: "#E5AE1F"
+        },
+        green: {
+          primary: "#18CE2A"
+        }
        
       },
       fontSize:{
@@ -50,6 +60,9 @@ module.exports = {
         // => @media (min-width: 1536px) { ... }
 
         
+      },
+      zIndex: {
+        "1": 1
       }
     },
   },
