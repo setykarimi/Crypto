@@ -1,4 +1,5 @@
 import CryptoMarketCards from "common/cards/cardCryptoMarket";
+import OnlinePricesTable from "common/table/tableOnlinePrices";
 import HomeBanner from "pagesComp/home/banner/bannerHome";
 
 export default function HomePage() {
@@ -6,6 +7,7 @@ export default function HomePage() {
     <>
       <HomeBanner />
       <CryptoMarketCards />
+      <OnlinePricesTable />
     </>
   );
 }
