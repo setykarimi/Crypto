@@ -5,7 +5,7 @@ import React from "react";
 export default function CryptoMarketCards() {
   return (
     <div
-      className="lg:mt-24 mt-12 pb-24"
+      className="lg:mt-24 mt-12 pb-12"
       style={{
         background: `url(${cryptoMarketBg}) no-repeat center right`,
         backgroundSize: "contain",
