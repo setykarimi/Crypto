@@ -6,7 +6,7 @@ import { BsArrowLeft } from "react-icons/bs";
 export default function OnlinePricesTable() {
   return (
     <div
-      className="lg:mt-24 mt-12 pb-24 md:pt-24 pt-8 md:w-full w-[95%] mx-auto md:rounded-none rounded-3xl"
+      className="lg:mt-24 mt-12 pb-12 md:pt-24 pt-8 md:w-full w-[95%] mx-auto md:rounded-none rounded-3xl"
       style={{
         background: `url(${onlinePricesBg}) no-repeat center top`,
         backgroundSize: "cover",
