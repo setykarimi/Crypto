@@ -1,5 +1,5 @@
 import SectionsTitle from "common/titles/titleSections";
-import React from "react";
+import cryptoMarketBg from "images/backgrounds/cryptoMarketBg.svg";
 import { BsCupHotFill } from "react-icons/bs";
 import { MdPrivacyTip } from "react-icons/md";
 import { RiSecurePaymentFill } from "react-icons/ri";
@@ -7,8 +7,15 @@ import { TbAwardFilled } from "react-icons/tb";
 
 export default function BannerWhyCrypto() {
   return (
-    <div className="lg:mt-24 mt-12 pb-12">
+    <div
+      className="lg:mt-24 mt-12 pb-12"
+      style={{
+        background: `url(${cryptoMarketBg}) no-repeat center right`,
+        backgroundSize: "contain",
+      }}
+    >
       <section className="inner-container mx-auto md:px-0 px-2">
+        {/* Title Section*/}
         {/* Title Section*/}
         <SectionsTitle number={3} title="کریپتر" subTitle="چرا" />
         {/* End Title Section*/}
@@ -22,12 +29,14 @@ export default function BannerWhyCrypto() {
 const Cards = () => {
   const list = [
     {
-      icon: <TbAwardFilled className="mx-auto md:text-[7rem] text-[4rem]"  />,
+      icon: <TbAwardFilled className="mx-auto md:text-[7rem] text-[4rem]" />,
       title: "اولین در ایران",
       color: "#2150F5",
     },
     {
-      icon: <RiSecurePaymentFill className="mx-auto md:text-[7rem] text-[4rem]" />,
+      icon: (
+        <RiSecurePaymentFill className="mx-auto md:text-[7rem] text-[4rem]" />
+      ),
       title: "کمترین کارمزد در ایران",
       color: "#E8B229",
     },
@@ -45,11 +54,11 @@ const Cards = () => {
   return (
     <div className="grid md:grid-cols-4 grid-cols-2 lg:gap-16 md:gap-6 gap-8">
       {list.map((item) => (
-        <div style={{color: item.color}}>
+        <div style={{ color: item.color }}>
           {item.icon}
           <span
             className={`block text-center font-bold lg:text-xl text-md border-b-4 pb-4 mt-6`}
-            style={{borderBottomColor: item.color}}
+            style={{ borderBottomColor: item.color }}
           >
             {item.title}
           </span>
