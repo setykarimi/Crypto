@@ -33,6 +33,14 @@ body, html{
   direction: rtl;
 }
 
+.rtl{
+  direction: rtl;
+}
+
+.ltr{
+  direction: ltr;
+}
+
 .font-bold{
   font-family: 'YekanBakh-bold';
 }
@@ -41,6 +49,7 @@ body, html{
 }
 .font-semiBold{
   font-family: 'YekanBakh-semiBold';
+  font-weight: normal;
 }
 .font-light{
   font-family: 'YekanBakh-light';
