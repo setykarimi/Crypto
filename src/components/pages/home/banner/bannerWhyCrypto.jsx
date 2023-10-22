@@ -16,7 +16,7 @@ export default function BannerWhyCrypto() {
     >
       <section className="inner-container mx-auto md:px-0 px-2">
         <SectionsTitle number={3} title="کریپتر" subTitle="چرا" />
-        <Cards />
+        <Cards />  
       </section>
     </div>
   );
