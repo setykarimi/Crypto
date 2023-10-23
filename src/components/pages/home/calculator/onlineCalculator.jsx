@@ -1,5 +1,5 @@
 import React from "react";
-import onlineCalculatorBg from "images/backgrounds/OnlineCalculatorBg.svg";
+import onlineCalculatorBg from "images/backgrounds/onlineCalculatorBg.svg";
 import creditCard from "images/items/creditCard.svg";
 import wallet from "images/items/wallet.svg";
 import SectionsTitle from "common/titles/titleSections";
