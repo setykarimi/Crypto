@@ -1,3 +1,4 @@
+import Blogs from "common/blogs/blogs";
 import CryptoMarketCards from "common/cards/cardCryptoMarket";
 import OnlinePricesTable from "common/table/tableOnlinePrices";
 import HomeBanner from "pagesComp/home/banner/bannerHome";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <BannerWhyCrypto />
       <OnlineCalculator />
       <Content />
+      <Blogs />
     </>
   );
 }
