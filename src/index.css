@@ -42,20 +42,19 @@ body, html{
 }
 
 .font-bold{
-  font-family: 'YekanBakh-bold';
+  font-family: 'YekanBakh-bold'!important;
 }
 .font-extraBold{
-  font-family: 'YekanBakh-extraBold';
+  font-family: 'YekanBakh-extraBold'!important;
 }
 .font-semiBold{
-  font-family: 'YekanBakh-semiBold';
-  font-weight: normal;
+  font-family: 'YekanBakh-semiBold'!important;
 }
 .font-light{
-  font-family: 'YekanBakh-light';
+  font-family: 'YekanBakh-light'!important;
 }
 .font-black{
-  font-family: 'YekanBakh-black';
+  font-family: 'YekanBakh-black'!important;
 }
 
 .inner-container{
