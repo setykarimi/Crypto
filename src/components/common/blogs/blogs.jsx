@@ -1,6 +1,7 @@
 import React from "react";
 import cryptoMarketBg from "images/backgrounds/cryptoMarketBg.svg";
 import SectionsTitle from "common/titles/titleSections";
+import BlogCard from "./blogCard";
 
 export default function Blogs() {
   return (
@@ -21,7 +22,10 @@ export default function Blogs() {
         {/* End Title Section*/}
 
         {/* Cards */}
-        <section className="grid md:grid-cols-4 grid-cols-2 xl:gap-12 lg:gap-8 gap-4"></section>
+        <section className="grid lg:grid-cols-2 grid-cols-1 xl:gap-12 gap-8">
+          <BlogCard />
+          <BlogCard />
+        </section>
       </section>
     </div>
   );
