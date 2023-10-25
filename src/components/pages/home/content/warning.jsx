@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Warning() {
   return (
-    <div className="bg-red-500">
+    <div className="bg-red-500 lg:mt-24 mt-12 ">
       <section className="inner-container mx-auto md:px-0 px-2">
         <p className="text-justify text-white font-bold py-4 leading-loose">
           خواهشمند است در هنگام خرید و فروش ارزهای دیجیتال، به اندازه کافی
