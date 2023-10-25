@@ -4,7 +4,8 @@ import OnlinePricesTable from "common/table/tableOnlinePrices";
 import HomeBanner from "pagesComp/home/banner/bannerHome";
 import BannerWhyCrypto from "pagesComp/home/banner/bannerWhyCrypto";
 import OnlineCalculator from "pagesComp/home/calculator/onlineCalculator";
-import Content from "pagesComp/home/content/content";
+import CryptoContent from "pagesComp/home/content/cryptoContent";
+import DigitalWallet from "pagesComp/home/content/digitalWallet";
 
 export default function HomePage() {
   return (
@@ -14,8 +15,9 @@ export default function HomePage() {
       <OnlinePricesTable />
       <BannerWhyCrypto />
       <OnlineCalculator />
-      <Content />
+      <CryptoContent />
       <Blogs />
+      <DigitalWallet />
     </>
   );
 }
