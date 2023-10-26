@@ -7,7 +7,10 @@
       "images/*": ["./src/assets/images/*"],
       "pages/*": ["./src/pages/*"],
       "routes/*": ["./src/routes/*"],
-      "layout/*": ["./src/layout/*"]
+      "layout/*": ["./src/layout/*"],
+      "config/*": ["./src/config/*"],
+      "hooks/*": ["src/hooks/*"],
+      "utils/*": ["src/utils/*"],
     }
   }
 }
