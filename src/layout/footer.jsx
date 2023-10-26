@@ -94,7 +94,7 @@ const CryptoGuide = () => {
       <ul className="list-disc pr-4">
         {list.map((title) => (
           <li>
-            <Link to="" className="text-white text-sm block mt-2 font-medium">
+            <Link to="" className="text-white text-sm block mt-2 font-semiBold">
               {title}
             </Link>
           </li>
@@ -122,7 +122,7 @@ const QuickAccess = () => {
       <ul className="list-disc pr-4">
         {list.map((title) => (
           <li>
-            <Link to="" className="text-white text-sm block mt-2 font-medium">
+            <Link to="" className="text-white text-sm block mt-2 font-semiBold">
               {title}
             </Link>
           </li>
@@ -147,7 +147,7 @@ const ImportantLinks = () => {
       <ul className="list-disc pr-4">
         {list.map((title) => (
           <li>
-            <Link to="" className="text-white text-sm block mt-2 font-medium">
+            <Link to="" className="text-white text-sm block mt-2 font-semiBold">
               {title}
             </Link>
           </li>

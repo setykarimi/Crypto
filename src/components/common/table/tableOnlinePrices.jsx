@@ -62,7 +62,7 @@ const TableRow = () => {
       <span className="text-green-primary font-bold text-center md:block hidden md:py-4 py-2 my-auto">
         0.25 (150)
       </span>
-      <button className="m-auto text-white bg-blue-500 rounded-xl py-2 px-3 font-medium md:text-base text-sm">
+      <button className="m-auto text-white bg-blue-500 rounded-xl py-2 px-3 font-semiBold md:text-base text-sm">
         خرید / فروش
       </button>
     </div>
