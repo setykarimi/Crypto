@@ -27,7 +27,7 @@ export default function DigitalWallet() {
             alt="logo"
             className="mx-auto absolute md:-top-4 -top-2 right-0 left-0 md:w-auto w-40"
           />
-          <p className="text-gray-400 font-bold leading-loose text-justify">
+          <p className="text-gray-400 font-semiBold leading-loose text-justify">
             در صرافی ارز دیجیتال کریپتر که امن ترین صرافی کریپتوکارنسی
             (Cryptocurrency) کشور است، شما توانایی خرید و فروش انواع ارزهای
             دیجیتال معتبر دنیا مانند بیت کوین، اتریوم، تتر، دوج کوین، شیبا و ...
