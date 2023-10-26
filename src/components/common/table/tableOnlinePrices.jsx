@@ -5,8 +5,6 @@ import { BsArrowLeft } from "react-icons/bs";
 import { numberSeprator } from "utils/numberSeprator";
 
 export default function OnlinePricesTable() {
-  const { data: coins, error, isLoading } = useCoins("/coins?&limit=4");
-
   return (
     <div
       className="lg:mt-24 mt-12 pb-12 md:pt-24 pt-8 md:w-full w-[95%] mx-auto md:rounded-none rounded-3xl"
@@ -41,20 +39,48 @@ export default function OnlinePricesTable() {
           <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
             معامله
           </span>
-          {coins?.result.map((coin) => (
-            <TableRow
-              key={coin.price}
-              icon={coin.icon}
-              price={numberSeprator(Math.round(coin.price).toFixed(0))}
-              volume={numberSeprator(Math.round(coin.volume).toFixed(0))}
-              priceChange1w={coin.priceChange1w}
-            />
-          ))}
+          <Table />
         </div>
       </section>
     </div>
   );
 }
+
+const Table = () => {
+  const { data: coins, error, isLoading } = useCoins("/coins?&limit=4");
+
+  if (isLoading) {
+    return (
+      <div className="md:col-span-5 col-span-3 grid md:grid-cols-5 grid-cols-3 border-b border-b-blue-400 gap-16 px-8 py-4">
+        <span className="md:w-16 w-10 md:h-16 h-10 rounded-full bg-gray-100 m-auto"></span>
+        <span className="bg-gray-100 h-4 rounded-lg w-full m-auto"></span>
+        <span className="bg-gray-100 h-4 rounded-lg w-full m-auto"></span>
+        <span className="bg-gray-100 h-4 rounded-lg w-full m-auto"></span>
+        <span className="bg-gray-100 h-4 rounded-lg w-full m-auto"></span>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="md:col-span-5 col-span-3 ">
+        <span className="text-red-primary text-center block py-4 font-bold">
+          متاسفانه خطایی رخ داده است.
+        </span>
+      </div>
+    );
+  }
+
+  return coins?.result.map((coin) => (
+    <TableRow
+      key={coin.price}
+      icon={coin.icon}
+      price={numberSeprator(Math.round(coin.price).toFixed(0))}
+      volume={numberSeprator(Math.round(coin.volume).toFixed(0))}
+      priceChange1w={coin.priceChange1w}
+    />
+  ));
+};
 
 const TableRow = (props) => {
   const { icon, price, volume, priceChange1w } = props;
