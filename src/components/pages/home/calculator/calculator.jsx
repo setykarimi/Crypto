@@ -19,7 +19,7 @@ export default function Calculator() {
 
       {/* Start مبلغ پرداختی */}
       <div className="mt-4">
-        <label className="text-blue-primary font-semibold mb-2 text-sm block">
+        <label className="text-blue-primary font-semiBold mb-2 text-sm block">
           مبلغ پرداختی
         </label>
         <div className="bg-blue-200 py-1 px-4 rounded-lg flex gap-4">
@@ -43,7 +43,7 @@ export default function Calculator() {
 
       {/* Start مبلغ دریافتی */}
       <div>
-        <label className="text-blue-primary font-semibold mb-2 text-sm block">
+        <label className="text-blue-primary font-semiBold mb-2 text-sm block">
           مبلغ دریافتی
         </label>
         <div className="bg-blue-200 py-1 px-4 rounded-lg flex gap-4">
