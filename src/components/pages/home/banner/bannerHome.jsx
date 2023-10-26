@@ -38,7 +38,7 @@ const ContentTitle = () => {
       <span className="font-light block text-white mt-1 md:text-base text-sm">
         مطمئن‌ترین ارز دیجیتال در ایران
       </span>
-      <button className="w-10/12 md:text-base text-sm border-2 border-yellow-primary py-2 rounded-xl text-yellow-primary font-extrabold mt-8">
+      <button className="w-10/12 md:text-base text-sm border-2 border-yellow-primary py-2 rounded-xl text-yellow-primary font-extraBold mt-8">
         بزن بریم برای دریافت جایزه
       </button>
     </div>
