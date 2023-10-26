@@ -23,19 +23,19 @@ export default function OnlinePricesTable() {
         {/* End Title Section*/}
 
         <div className="grid md:grid-cols-5 grid-cols-3 bg-white rounded-3xl">
-          <span className="text-center block text-gray-400 font-semibold text-lg py-4 border-b border-b-blue-100">
+          <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
             رمز ارزها
           </span>
-          <span className="text-center block text-gray-400 font-semibold text-lg py-4 border-b border-b-blue-100">
+          <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
             قیمت لحظه‌ای
           </span>
-          <span className="text-center md:block hidden text-gray-400 font-semibold text-lg py-4 border-b border-b-blue-100">
+          <span className="text-center md:block hidden text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
             حجم در ۳۴ ساعت
           </span>
-          <span className="text-center md:block hidden text-gray-400 font-semibold text-lg py-4 border-b border-b-blue-100">
+          <span className="text-center md:block hidden text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
             تغییرات
           </span>
-          <span className="text-center block text-gray-400 font-semibold text-lg py-4 border-b border-b-blue-100">
+          <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
             معامله
           </span>
           <TableRow />
