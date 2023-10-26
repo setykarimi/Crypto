@@ -6,10 +6,10 @@ import React from "react";
 export default function DigitalWallet() {
   return (
     <div
-      className="lg:mt-24 mt-12 pb-12"
+      className="lg:mt-24 mt-12 pt-12 pb-12"
       style={{
         background: `url(${cryptoMarketBg}) no-repeat center right`,
-        backgroundSize: "contain",
+        backgroundSize: "cover",
       }}
     >
       <section className="inner-container mx-auto md:px-0 px-2">
