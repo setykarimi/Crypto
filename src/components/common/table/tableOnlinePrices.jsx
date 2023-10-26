@@ -1,9 +1,12 @@
 import SectionsTitle from "common/titles/titleSections";
+import { useCoins } from "hooks/useCoins";
 import onlinePricesBg from "images/backgrounds/onlinePricesBg.png";
-import React from "react";
 import { BsArrowLeft } from "react-icons/bs";
+import { numberSeprator } from "utils/numberSeprator";
 
 export default function OnlinePricesTable() {
+  const { data: coins, error, isLoading } = useCoins("/coins?&limit=4");
+
   return (
     <div
       className="lg:mt-24 mt-12 pb-12 md:pt-24 pt-8 md:w-full w-[95%] mx-auto md:rounded-none rounded-3xl"
@@ -30,37 +33,48 @@ export default function OnlinePricesTable() {
             قیمت لحظه‌ای
           </span>
           <span className="text-center md:block hidden text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
-            حجم در ۳۴ ساعت
+            حجم در ۲۴ ساعت
           </span>
           <span className="text-center md:block hidden text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
-            تغییرات
+            تغییرات یک هفته اخیر
           </span>
           <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
             معامله
           </span>
-          <TableRow />
-          <TableRow />
-          <TableRow />
+          {coins?.result.map((coin) => (
+            <TableRow
+              key={coin.price}
+              icon={coin.icon}
+              price={numberSeprator(Math.round(coin.price).toFixed(0))}
+              volume={numberSeprator(Math.round(coin.volume).toFixed(0))}
+              priceChange1w={coin.priceChange1w}
+            />
+          ))}
         </div>
       </section>
     </div>
   );
 }
 
-const TableRow = () => {
+const TableRow = (props) => {
+  const { icon, price, volume, priceChange1w } = props;
   return (
     <div className="md:col-span-5 col-span-3 grid md:grid-cols-5 grid-cols-3 border-b border-b-blue-400">
       <div className="flex justify-center items-center md:py-4 py-2">
-        <div className="bg-blue-400 md:w-16 w-10 md:h-16 h-10 rounded-full"></div>
+        <img
+          src={icon}
+          alt="icon"
+          className="md:w-16 w-10 md:h-16 h-10 rounded-full"
+        />
       </div>
       <span className="text-blue-primary font-bold text-center block md:py-4 py-2 my-auto">
-        98,254 ریال
+        {price} دلار
       </span>
       <span className="text-gray-900 font-bold text-center md:block hidden md:py-4 py-2 my-auto">
-        525.214.214.214
+        {volume}
       </span>
       <span className="text-green-primary font-bold text-center md:block hidden md:py-4 py-2 my-auto">
-        0.25 (150)
+        {priceChange1w}
       </span>
       <button className="m-auto text-white bg-blue-500 rounded-xl py-2 px-3 font-semiBold md:text-base text-sm">
         خرید / فروش
