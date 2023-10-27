@@ -1,3 +1,4 @@
+import FrequentQuestions from "common/accordion/frequentQuestions";
 import Blogs from "common/blogs/blogs";
 import CryptoMarketCards from "common/cards/cardCryptoMarket";
 import OnlinePricesTable from "common/table/tableOnlinePrices";
@@ -22,6 +23,7 @@ export default function HomePage() {
       <DigitalWallet />
       <Warning />
       <SafeExchange />
+      <FrequentQuestions />
     </>
   );
 }
