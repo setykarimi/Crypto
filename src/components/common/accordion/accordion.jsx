@@ -13,7 +13,7 @@ export default function Accordion(props) {
         className="accordion-toggle flex justify-between items-center text-gray-500"
         onClick={() => setIsActive(!isActive)}
       >
-        <span className="font-bold md:text-lg">{title}</span>
+        <span className="font-extraBold md:text-lg">{title}</span>
         <button>{isActive ? <FaChevronUp /> : <FaChevronDown />}</button>
       </div>
 
