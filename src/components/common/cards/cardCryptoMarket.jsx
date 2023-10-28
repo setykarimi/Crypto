@@ -69,7 +69,7 @@ const Card = (props) => {
         className="lg:h-24 h-16 lg:w-24 w-16 rounded-full"
         alt="icon"
       />
-      <span className="text-orange-primary flex gap-4 font-bold text-lg block">
+      <span className="text-orange-primary gap-4 font-bold text-lg block">
         {name}
       </span>
       <span className="text-white block lg:text-xl text-lg lg:font-bold">
