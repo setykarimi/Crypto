@@ -15,6 +15,7 @@ export default defineConfig({
       routes: "/src/routes/",
       hooks: "/src/hooks/",
       utils: "/src/utils/",
+      '@/staticData': "/src/assets/data/index",
     },
   },
 });
