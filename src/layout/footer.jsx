@@ -16,7 +16,7 @@ export default function Footer() {
       <NewsLetter />
 
       {/* ___________________ درباره کریپتر  ___________________ */}
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mt-8">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 mt-8">
         <div>
           <img src={logoWhite} alt="logo" className="w-20" />
           <p className="mt-2 text-justify leading-relaxed ">
