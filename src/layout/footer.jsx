@@ -1,6 +1,6 @@
 import footerBg from "images/backgrounds/footerBg.svg";
-import logoRed from "images/logoRed.svg";
-import logoWhite from "images/logoWhite.svg";
+import logoRed from "images/logos/logoRed.svg";
+import logoWhite from "images/logos/logoWhite.svg";
 import { BsTwitter } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
