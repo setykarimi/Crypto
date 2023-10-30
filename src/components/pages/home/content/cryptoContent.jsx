@@ -1,5 +1,5 @@
 import React from "react";
-import grayLogo from "images/logoGray.svg";
+import grayLogo from "images/logos/logoGray.svg";
 
 export default function CryptoContent() {
   return (
