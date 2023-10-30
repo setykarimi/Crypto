@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../assets/logo.svg";
+import Logo from "images/logos/logo.svg";
 import { BsHeadphones, BsPersonFill } from "react-icons/bs";
 import { HiMenu } from "react-icons/hi";
 import { TbHome2 } from "react-icons/tb";
