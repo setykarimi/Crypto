@@ -9,6 +9,8 @@ export default defineConfig({
       common: "/src/components/common",
       pagesComp: "/src/components/pages",
       images: "/src/assets/images/",
+      '@/assets': "/src/assets/",
+      '@/data': "/src/assets/index",
       config: "/src/config",
       pages: "/src/pages/",
       layout: "/src/layout/",
