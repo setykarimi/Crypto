@@ -1,17 +1,20 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "common/*": ["./src/components/common/*"],
-      "pagesComp/*": ["./src/components/pages/*"],
-      "images/*": ["./src/assets/images/*"],
-      "pages/*": ["./src/pages/*"],
-      "routes/*": ["./src/routes/*"],
-      "layout/*": ["./src/layout/*"],
-      "config/*": ["./src/config/*"],
-      "hooks/*": ["src/hooks/*"],
-      "utils/*": ["src/utils/*"],
-      "@/staticData": ["./src/assets/data/index"],
+      "common/*": ["/components/common/*"],
+      "pagesComp/*": ["/components/pages/*"],
+      "images/*": ["/assets/images/*"],
+      "@/assets/*": ["/assets/*"],
+      "@/data": ["/assets/index"],
+      
+      "pages/*": ["/pages/*"],
+      "routes/*": ["/routes/*"],
+      "layout/*": ["/layout/*"],
+      "config/*": ["/config/*"],
+      "hooks/*": ["/hooks/*"],
+      "utils/*": ["/utils/*"],
+      "@/staticData": ["/assets/data/index"],
     }
   }
 }
