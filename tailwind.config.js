@@ -34,7 +34,7 @@ module.exports = {
         red: {
           primary: "#F53A21",
           500: "#F87C6B",
-          700: "#F75B46"
+          700: "#F75B46",
         },
         yellow: {
           primary: "#FFF110",

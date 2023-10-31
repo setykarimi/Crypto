@@ -1,4 +1,12 @@
-export default function SectionsTitle(props) {
+import React from "react";
+
+interface PropsType {
+  number: number;
+  title: string;
+  subTitle: string;
+  children?: React.ReactNode;
+}
+export default function SectionsTitle(props: PropsType) {
   const { number, title, subTitle, children } = props;
   return (
     <div className="mb-8 flex justify-between">

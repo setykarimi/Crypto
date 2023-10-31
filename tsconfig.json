@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "common/*": ["/components/common/*"],
+      "pagesComp/*": ["/components/pages/*"],
+      "images/*": ["/assets/images/*"],
+      "@/assets/*": ["/assets/*"],
+      "@/data": ["/assets/index"],
+      
+      "pages/*": ["/pages/*"],
+      "routes/*": ["/routes/*"],
+      "layout/*": ["/layout/*"],
+      "config/*": ["/config/*"],
+      "hooks/*": ["/hooks/*"],
+      "utils/*": ["/utils/*"],
+      "@/staticData": ["/assets/data/index"],
+    },
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

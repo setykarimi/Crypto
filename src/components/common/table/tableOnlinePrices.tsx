@@ -71,7 +71,7 @@ const Table = () => {
     );
   }
 
-  return coins?.result.map((coin) => (
+  return coins?.result.map((coin: any) => (
     <TableRow
       key={coin.price}
       icon={coin.icon}
@@ -82,7 +82,7 @@ const Table = () => {
   ));
 };
 
-const TableRow = (props) => {
+const TableRow = (props: any) => {
   const { icon, price, volume, priceChange1w } = props;
   return (
     <div className="md:col-span-5 col-span-3 grid md:grid-cols-5 grid-cols-3 border-b border-b-blue-400">

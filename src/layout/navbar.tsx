@@ -1,17 +1,16 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 import Logo from "images/logos/logo.svg";
+import { useState } from "react";
 import { BsHeadphones, BsPersonFill } from "react-icons/bs";
-import { HiMenu } from "react-icons/hi";
-import { TbHome2 } from "react-icons/tb";
-import { RiMoneyDollarBoxFill } from "react-icons/ri";
-import { MdInsertChart } from "react-icons/md";
 import { FaHeadphones, FaSignOutAlt } from "react-icons/fa";
+import { HiHome, HiMenu } from "react-icons/hi";
+import { MdInsertChart } from "react-icons/md";
 import { PiPencilSimpleLineFill, PiTelevisionSimpleFill } from "react-icons/pi";
+import { RiMoneyDollarBoxFill } from "react-icons/ri";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   // Show menu state
-  const [showMenu, setShowMenu] = useState(null);
+  const [showMenu, setShowMenu] = useState<Boolean | null>(null);
   const showMenuHandler = () => {
     setShowMenu(true);
   };
@@ -23,7 +22,7 @@ export default function Navbar() {
     {
       title: "صفحه اصلی",
       to: "/",
-      icon: <TbHome2 size={20} />,
+      icon: <HiHome size={20} />,
     },
     {
       title: "خرید و فروش ارز دیجیتال",

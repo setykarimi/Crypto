@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Warning() {
   return (
     <div className="bg-red-500 lg:mt-24 mt-12 ">

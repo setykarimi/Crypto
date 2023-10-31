@@ -1,9 +1,7 @@
-import BlogCard from "common/blogs/blogCard";
 import TitlePage from "common/titles/titlePage";
 import BannerNews from "pagesComp/news/banner/bannerNews";
 import InputFilter from "pagesComp/news/input/inputFilter";
 import NewsContent from "pagesComp/news/newsContent/news";
-import React from "react";
 
 export default function NewsPage() {
   return (

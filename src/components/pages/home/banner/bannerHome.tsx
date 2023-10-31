@@ -1,4 +1,3 @@
-import React from "react";
 import bannerHomeBg from "images/banner/bannerHomeBg.svg";
 import bannerHomeWallet from "images/banner/bannerHomeWallet.svg";
 

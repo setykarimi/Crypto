@@ -1,4 +1,3 @@
-import React from "react";
 import { BsArrowLeft } from "react-icons/bs";
 
 export default function SafeExchange() {

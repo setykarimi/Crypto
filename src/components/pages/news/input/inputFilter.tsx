@@ -1,4 +1,3 @@
-import React from "react";
 import { BsFilterLeft } from "react-icons/bs";
 import { RiSearch2Fill } from "react-icons/ri";
 

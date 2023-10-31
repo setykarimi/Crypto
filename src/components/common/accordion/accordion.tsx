@@ -1,9 +1,14 @@
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-export default function Accordion(props) {
+interface PropsType {
+  title: string;
+  content: string;
+}
+
+export default function Accordion(props: PropsType) {
   const { title, content } = props;
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState<Boolean>(false);
 
   return (
     <div
@@ -23,7 +28,9 @@ export default function Accordion(props) {
         }`}
         style={{ transition: "max-height 0.5s ease-in-out" }}
       >
-        <p className="text-gray-400 mt-4 bg-white rounded-xl p-4 lg:w-[90%] w-full text-justify">{content}</p>
+        <p className="text-gray-400 mt-4 bg-white rounded-xl p-4 lg:w-[90%] w-full text-justify">
+          {content}
+        </p>
       </div>
     </div>
   );

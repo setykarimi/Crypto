@@ -1,4 +1,3 @@
-import React from "react";
 import image from "images/blog/blog1.png";
 import { FaPen } from "react-icons/fa";
 import { BsCalendarDateFill } from "react-icons/bs";

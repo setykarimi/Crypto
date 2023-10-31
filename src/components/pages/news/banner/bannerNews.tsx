@@ -1,4 +1,3 @@
-import React from "react";
 import newBannerImg from 'images/items/newsBannerItem.svg'
 import arrowDown from 'images/icon/arrowDown.svg'
 

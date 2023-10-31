@@ -1,4 +1,3 @@
-import React from "react";
 import { HiOutlineSwitchHorizontal } from "react-icons/hi";
 import { RiSettings5Fill } from "react-icons/ri";
 import { TbSwitchVertical } from "react-icons/tb";

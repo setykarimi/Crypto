@@ -1,7 +1,6 @@
 import SectionsTitle from "common/titles/titleSections";
 import cryptoMarketBg from "images/backgrounds/cryptoMarketBg.svg";
 import digitalWalletTitle from "images/items/digitalWalletTitle.svg";
-import React from "react";
 
 export default function DigitalWallet() {
   return (

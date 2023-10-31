@@ -1,7 +1,6 @@
 import SectionsTitle from "common/titles/titleSections";
 import { useCoins } from "hooks/useCoins";
 import cryptoMarketBg from "images/backgrounds/cryptoMarketBg.svg";
-import React from "react";
 import { numberSeprator } from "utils/numberSeprator";
 
 export default function CryptoMarketCards() {
@@ -36,7 +35,7 @@ export default function CryptoMarketCards() {
 }
 
 const Cards = () => {
-  const { data: coins, isLoading, error } = useCoins("/coins?&limit=4&page=2");
+  const { data: coins, isLoading } = useCoins("/coins?&limit=4&page=2");
 
   if (isLoading) {
     return (
@@ -49,7 +48,7 @@ const Cards = () => {
     );
   }
 
-  return coins?.result?.map((coin) => (
+  return coins?.result?.map((coin: any) => (
     <Card
       icon={coin.icon}
       name={coin.name}
@@ -60,7 +59,7 @@ const Cards = () => {
   ));
 };
 
-const Card = (props) => {
+const Card = (props:any) => {
   const { icon, name, price, priceChange1h, priceChange1d } = props;
   return (
     <div className="bg-blue-primary lg:p-8 p-4 lg:rounded-[3rem] rounded-3xl flex flex-col items-center lg:gap-4 gap-2">

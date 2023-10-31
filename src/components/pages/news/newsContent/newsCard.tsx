@@ -1,10 +1,17 @@
-import React from "react";
-import image from "images/blog/blog1.png";
 import { FaPen } from "react-icons/fa";
 import { BsCalendarDateFill } from "react-icons/bs";
 import { HiEye } from "react-icons/hi";
 
-export default function NewsCard(props) {
+interface PropsType {
+  img: string;
+  title: string;
+  desc: string;
+  author: string;
+  date: string;
+  view: number;
+}
+
+export default function NewsCard(props: PropsType) {
   const { img, title, desc, author, date, view } = props;
   return (
     <div

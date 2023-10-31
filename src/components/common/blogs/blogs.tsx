@@ -1,4 +1,3 @@
-import React from "react";
 import cryptoMarketBg from "images/backgrounds/cryptoMarketBg.svg";
 import SectionsTitle from "common/titles/titleSections";
 import BlogCard from "./blogCard";
