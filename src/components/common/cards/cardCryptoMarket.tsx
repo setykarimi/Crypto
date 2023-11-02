@@ -1,14 +1,14 @@
-import SectionsTitle from "common/titles/titleSections";
-import { useCoins } from "hooks/useCoins";
-import cryptoMarketBg from "images/backgrounds/cryptoMarketBg.svg";
-import { numberSeprator } from "utils/numberSeprator";
+import SectionsTitle from "@common/titles/titleSections";
+import { useCoins } from "@hooks/useCoins";
+import { numberSeprator } from "@utils/numberSeprator";
+import { img } from "@data";
 
 export default function CryptoMarketCards() {
   return (
     <div
       className="lg:mt-24 mt-12 pb-12"
       style={{
-        background: `url(${cryptoMarketBg}) no-repeat center right`,
+        background: `url(${img.crypto_market_bg}) no-repeat center right`,
         backgroundSize: "contain",
       }}
     >
