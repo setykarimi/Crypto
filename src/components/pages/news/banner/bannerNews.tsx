@@ -1,5 +1,4 @@
-import newBannerImg from 'images/items/newsBannerItem.svg'
-import arrowDown from 'images/icon/arrowDown.svg'
+import { img } from '@data';
 
 export default function BannerNews() {
   return (
@@ -10,10 +9,10 @@ export default function BannerNews() {
       }}
     >
       <div className="inner-container mx-auto flex md:flex-row flex-col-reverse md:justify-between items-center md:px-0 px-2">
-        <img src={newBannerImg} alt="wallet" className="lg:w-fit w-[30rem] mx-auto mt-20"/>
+        <img src={img.new_banner_img} alt="wallet" className="lg:w-fit w-[30rem] mx-auto mt-20"/>
       </div>
       <button className="absolute lg:-bottom-14 md:-bottom-10 -bottom-9 mx-auto left-0 right-0 w-fit px-8 py-2">
-      <img src={arrowDown} alt="wallet" className="lg:w-fit md:w-16 w-12"/>
+      <img src={img.arrow_down} alt="wallet" className="lg:w-fit md:w-16 w-12"/>
 
       </button>
     </div>
