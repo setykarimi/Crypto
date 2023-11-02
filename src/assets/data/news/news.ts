@@ -1,6 +1,7 @@
-import { img } from "@/data";
+import { img } from "@data";
+import { initType } from "./initialType";
 
-export const news = [
+export const news: initType = [
   {
     img: img.news1_img,
     title: "رمز ارز ملی: از رویا تا حقیقت!",
@@ -34,7 +35,7 @@ export const news = [
     view: 269,
   },
   {
-    img:img.news5_img,
+    img: img.news5_img,
     title: "سازوکار تولید ارز دیجیتال چیست؟",
     desc: "بیت کوین به عنوان نخستین ارز دیجیتال، در فرآیندی به نام ماینینگ یا استخراج ایجاد می‌شود که مانند عملیات استخراج در معادن واقعی ...",
     author: "مینا محبی",
