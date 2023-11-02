@@ -1,5 +1,5 @@
-import cryptoMarketBg from "images/backgrounds/cryptoMarketBg.svg";
-import SectionsTitle from "common/titles/titleSections";
+import SectionsTitle from "@common/titles/titleSections";
+import { img } from "@data";
 import BlogCard from "./blogCard";
 
 export default function Blogs() {
@@ -7,7 +7,7 @@ export default function Blogs() {
     <div
       className="lg:mt-24 mt-12 pb-12"
       style={{
-        background: `url(${cryptoMarketBg}) no-repeat center right`,
+        background: `url(${img.crypto_market_bg}) no-repeat center right`,
         backgroundSize: "contain",
       }}
     >
