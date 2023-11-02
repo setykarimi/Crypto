@@ -1,7 +1,7 @@
-import TitlePage from "common/titles/titlePage";
-import BannerNews from "pagesComp/news/banner/bannerNews";
-import InputFilter from "pagesComp/news/input/inputFilter";
-import NewsContent from "pagesComp/news/newsContent/news";
+import TitlePage from "@common/titles/titlePage";
+import BannerNews from "@pagesComp/news/banner/bannerNews";
+import InputFilter from "@pagesComp/news/input/inputFilter";
+import NewsContent from "@pagesComp/news/newsContent/news";
 
 export default function NewsPage() {
   return (
