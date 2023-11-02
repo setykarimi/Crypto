@@ -1,7 +1,7 @@
-import image from "images/blog/blog1.png";
 import { FaPen } from "react-icons/fa";
 import { BsCalendarDateFill } from "react-icons/bs";
 import { HiEye } from "react-icons/hi";
+import { img } from "@data";
 
 export default function BlogCard() {
   return (
@@ -15,7 +15,7 @@ export default function BlogCard() {
       <div className="py-4 pr-4 md:pl-12 p-4 flex flex-col">
         <div className="flex gap-4">
           <img
-            src={image}
+            src={img.blog1_img}
             alt="blog"
             className="md:w-36 w-24 md:h-36 h-34 object-cover rounded-xl"
           />
