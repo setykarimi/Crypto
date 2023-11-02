@@ -1,5 +1,5 @@
-import SectionsTitle from "common/titles/titleSections";
-import cryptoMarketBg from "images/backgrounds/cryptoMarketBg.svg";
+import SectionsTitle from "@common/titles/titleSections";
+import { img } from "@data";
 import Accordion from "./accordion";
 
 export default function FrequentQuestions() {
@@ -22,7 +22,7 @@ export default function FrequentQuestions() {
     <div
       className="lg:mt-24 mt-12 pb-12 md:pt-24 pt-8 md:w-full w-[95%] mx-auto md:rounded-none rounded-3xl"
       style={{
-        background: `url(${cryptoMarketBg}) no-repeat center top`,
+        background: `url(${img.crypto_market_bg}) no-repeat center top`,
         backgroundSize: "cover",
       }}
     >
