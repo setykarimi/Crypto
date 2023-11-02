@@ -1,4 +1,4 @@
-import grayLogo from "images/logos/logoGray.svg";
+import { img } from "@data";
 
 export default function CryptoContent() {
   return (
@@ -6,7 +6,7 @@ export default function CryptoContent() {
       <div className="bg-gray-50 px-8 pt-12 pb-8 rounded-xl relative" style={{
         boxShadow: '4px 4px 22px 0px rgba(0, 0, 0, 0.15), -8px -10px 38px 0px #FFF, 7px 8px 16px -2px rgba(0, 0, 0, 0.04) inset, -4px -4px 16px 0px rgba(255, 255, 255, 0.76) inset'
       }}>
-        <img src={grayLogo} alt="logo" className="mx-auto absolute md:-top-8 -top-6 right-0 left-0 md:w-auto w-28"/>
+        <img src={img.logo_gray} alt="logo" className="mx-auto absolute md:-top-8 -top-6 right-0 left-0 md:w-auto w-28"/>
         <p className="text-gray-400 font-semiBold leading-loose text-justify">
           همانطور که برای نگهداری اسکناس و یا پول های موجود در بانک به کیف پول
           یا حساب بانکی نیاز داریم، کریپتوکارنسی ها هم نیاز به کیف پول (والت)
