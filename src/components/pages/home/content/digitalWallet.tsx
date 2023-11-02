@@ -1,13 +1,12 @@
-import SectionsTitle from "common/titles/titleSections";
-import cryptoMarketBg from "images/backgrounds/cryptoMarketBg.svg";
-import digitalWalletTitle from "images/items/digitalWalletTitle.svg";
+import SectionsTitle from "@common/titles/titleSections";
+import { img } from "@data";
 
 export default function DigitalWallet() {
   return (
     <div
       className="lg:mt-24 mt-12 pt-12 pb-12"
       style={{
-        background: `url(${cryptoMarketBg}) no-repeat center right`,
+        background: `url(${img.crypto_market_bg}) no-repeat center right`,
         backgroundSize: "cover",
       }}
     >
@@ -22,7 +21,7 @@ export default function DigitalWallet() {
           }}
         >
           <img
-            src={digitalWalletTitle}
+            src={img.digital_wallet_title}
             alt="logo"
             className="mx-auto absolute md:-top-4 -top-2 right-0 left-0 md:w-auto w-40"
           />
