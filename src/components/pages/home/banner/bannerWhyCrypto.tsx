@@ -1,5 +1,5 @@
-import SectionsTitle from "common/titles/titleSections";
-import cryptoMarketBg from "images/backgrounds/cryptoMarketBg.svg";
+import { img } from "@data";
+import SectionsTitle from "@common/titles/titleSections";
 import { BsCupHotFill } from "react-icons/bs";
 import { MdPrivacyTip } from "react-icons/md";
 import { RiSecurePaymentFill } from "react-icons/ri";
@@ -10,13 +10,13 @@ export default function BannerWhyCrypto() {
     <div
       className="lg:mt-24 mt-12 pb-12"
       style={{
-        background: `url(${cryptoMarketBg}) no-repeat center right`,
+        background: `url(${img.crypto_market_bg}) no-repeat center right`,
         backgroundSize: "contain",
       }}
     >
       <section className="inner-container mx-auto md:px-0 px-2">
         <SectionsTitle number={3} title="کریپتر" subTitle="چرا" />
-        <Cards />  
+        <Cards />
       </section>
     </div>
   );
