@@ -1,6 +1,4 @@
-import footerBg from "images/backgrounds/footerBg.svg";
-import logoRed from "images/logos/logoRed.svg";
-import logoWhite from "images/logos/logoWhite.svg";
+import { img } from "@data";
 import { BsTwitter } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
@@ -10,7 +8,7 @@ export default function Footer() {
   return (
     <footer
       className="inner-container mx-auto mt-8 rounded-2xl bg-blue-primary p-8 text-white"
-      style={{ backgroundImage: `url(${footerBg})` }}
+      style={{ backgroundImage: `url(${img.footer_bg})` }}
     >
       {/* ___________________ خبرنامه  ___________________ */}
       <NewsLetter />
@@ -18,7 +16,7 @@ export default function Footer() {
       {/* ___________________ درباره کریپتر  ___________________ */}
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 mt-8">
         <div>
-          <img src={logoWhite} alt="logo" className="w-20" />
+          <img src={img.logo_white} alt="logo" className="w-20" />
           <p className="mt-2 text-justify leading-relaxed ">
             در صرافی ارز دیجیتال کریپتر که امن ترین صرافی کریپتوکارنسی
             (Cryptocurrency) کشور است، شما توانایی خرید و فروش انواع ارزهای
@@ -56,7 +54,7 @@ const NewsLetter = () => {
       {" "}
       <div className="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
         <div>
-          <img src={logoRed} alt="logo" className="mx-auto" />
+          <img src={img.logo_red} alt="logo" className="mx-auto" />
           <span className="block mt-4">
             عضویت در خبرنامه کریپتر آخرین اخبار و اطلاعیه‌ها را در ایمیل خود
             دریافت کنید:
