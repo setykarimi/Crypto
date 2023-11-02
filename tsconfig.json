@@ -21,24 +21,19 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "common/*": ["/components/common/*"],
-      "pagesComp/*": ["/components/pages/*"],
-      "images/*": ["/assets/images/*"],
-      "@/assets/*": ["/assets/*"],
-      "@/data": ["/assets/index"],
-      
-      "pages/*": ["/pages/*"],
-      "routes/*": ["/routes/*"],
-      "layout/*": ["/layout/*"],
-      "config/*": ["/config/*"],
-      "hooks/*": ["/hooks/*"],
-      "utils/*": ["/utils/*"],
-      "@/staticData": ["/assets/data/index"],
+      "@/*": ["./src/*", "./dist/*", ""],
+      "@pagesComp/*": ["./src/components/pages/*"],
+      "@common/*": ["./src/components/common/*"],
+      "@data": ["./src/assets/index"],
+      "@assets/*": ["./src/assets/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@layout/*": ["./src/layout/*"],
+      "@config/*": ["./src/config/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@utils/*": ["./src/utils/*"]
     },
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }, ]
 }
