@@ -1,1 +1,1 @@
-export * as newsData from './news/news'
+export * as news_data from './news/news'
