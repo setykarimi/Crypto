@@ -1,4 +1,4 @@
-import Logo from "images/logos/logo.svg";
+import { img } from "@data";
 import { useState } from "react";
 import { BsHeadphones, BsPersonFill } from "react-icons/bs";
 import { FaHeadphones, FaSignOutAlt } from "react-icons/fa";
@@ -57,7 +57,7 @@ export default function Navbar() {
         <HiMenu className="text-blue-800" size={22} />
       </button>
       <Link to="/" className="logo flex lg:mr-0 mr-auto lg:ml-0 -ml-10">
-        <img src={Logo} alt="logo" className="lg:w-auto w-20" />
+        <img src={img.logo_main} alt="logo" className="lg:w-auto w-20" />
       </Link>
 
       <div
