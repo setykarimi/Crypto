@@ -1,15 +1,14 @@
-import bannerHomeBg from "images/banner/bannerHomeBg.svg";
-import bannerHomeWallet from "images/banner/bannerHomeWallet.svg";
+import { img } from "@data";
 
 export default function HomeBanner() {
   return (
     <div
       className="-mt-[5.6rem] z-0 relative xl:pb-28 pb-16 lg:px-0 px-4"
-      style={{ background: `url(${bannerHomeBg}) no-repeat center bottom`, backgroundSize: 'cover' }}
+      style={{ background: `url(${img.banner_home_bg}) no-repeat center bottom`, backgroundSize: 'cover' }}
     >
       <div className="inner-container mx-auto flex md:flex-row flex-col-reverse md:justify-between items-center md:px-0 px-2">
         <ContentTitle />
-        <img src={bannerHomeWallet} alt="wallet" className="xl:w-fit lg:w-96 md:w-80 w-56 mr-auto"/>
+        <img src={img.banner_home_wallet} alt="wallet" className="xl:w-fit lg:w-96 md:w-80 w-56 mr-auto"/>
       </div>
       <button className="absolute bottom-0 mx-auto left-0 right-0 w-fit px-8 py-2">
         <span className="xl:h-8 h-4 bg-gray-400 w-[2px] rounded-full block"></span>
