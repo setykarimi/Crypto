@@ -1,15 +1,15 @@
-import SectionsTitle from "common/titles/titleSections";
-import { useCoins } from "hooks/useCoins";
-import onlinePricesBg from "images/backgrounds/onlinePricesBg.png";
+import SectionsTitle from "@common/titles/titleSections";
+import { useCoins } from "@hooks/useCoins";
 import { BsArrowLeft } from "react-icons/bs";
-import { numberSeprator } from "utils/numberSeprator";
+import { numberSeprator } from "@utils/numberSeprator";
+import { img } from "@data";
 
 export default function OnlinePricesTable() {
   return (
     <div
       className="lg:mt-24 mt-12 pb-12 md:pt-24 pt-8 md:w-full w-[95%] mx-auto md:rounded-none rounded-3xl"
       style={{
-        background: `url(${onlinePricesBg}) no-repeat center top`,
+        background: `url(${img.online_prices_bg}) no-repeat center top`,
         backgroundSize: "cover",
       }}
     >
