@@ -1,4 +1,4 @@
-export type initType = {
+export type NewsInitType = {
   img: string;
   title: string;
   desc: string;
