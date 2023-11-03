@@ -1,7 +1,7 @@
 import { img } from "@data";
-import { initType } from "./initialType";
+import { NewsInitType } from "./initialType";
 
-export const news: initType = [
+export const news: NewsInitType = [
   {
     img: img.news1_img,
     title: "رمز ارز ملی: از رویا تا حقیقت!",
