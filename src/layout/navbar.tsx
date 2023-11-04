@@ -36,7 +36,7 @@ export default function Navbar() {
     },
     {
       title: "مقالات آموزشی",
-      to: "/example3",
+      to: "/learning-articles",
       icon: <PiPencilSimpleLineFill size={20} />,
     },
     {
