@@ -1,7 +1,8 @@
-import Layout from '@layout/layout';
-import HomePage from '@pages/home'
-import NewsPage from '@pages/news';
-import { createBrowserRouter } from 'react-router-dom';
+import LearningArticlesPage from "@pages/learningArticles";
+import Layout from "@layout/layout";
+import HomePage from "@pages/home";
+import NewsPage from "@pages/news";
+import { createBrowserRouter } from "react-router-dom";
 
 export const routes = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ export const routes = createBrowserRouter([
       {
         path: "/news",
         element: <NewsPage />,
+      },
+      {
+        path: "/learning-articles",
+        element: <LearningArticlesPage />,
       },
     ],
   },
