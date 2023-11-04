@@ -1,12 +1,7 @@
 import { static_data } from "@data";
 import { BsFilterLeft } from "react-icons/bs";
 import { RiSearch2Fill } from "react-icons/ri";
-
-interface InputFilterProps {
-  setFilteredNews: React.Dispatch<
-    React.SetStateAction<[] | static_data.news_init_type.NewsInitType>
-  >;
-}
+import { InputFilterProps } from "./type";
 
 export default function InputFilter({ setFilteredNews }: InputFilterProps) {
   const changeHandler = (e: React.FormEvent<HTMLInputElement>): void => {
