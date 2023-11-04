@@ -29,9 +29,12 @@ import banner_home_wallet from "@assets/images/banner/bannerHomeWallet.svg";
 import credit_card from "@assets/images/items/creditCard.svg";
 import wallet from "@assets/images/items/wallet.svg";
 import digital_wallet_title from "@assets/images/items/digitalWalletTitle.svg";
-import new_banner_img from '@assets/images/items/newsBannerItem.svg'
-import arrow_down from "@assets/images/icon/arrowDown.svg";
+import new_banner_img from "@assets/images/items/newsBannerItem.svg";
+import learning_articles_banner from "@assets/images/items/learningArticlesBanner.svg";
 
+// @@@__________ icons __________@@@
+import arrow_down_blue from "@assets/images/icon/arrowDownBlue.svg";
+import arrow_down from "@assets/images/icon/arrowDown.svg";
 
 export {
   news1_img,
@@ -56,7 +59,6 @@ export {
   banner_home_bg,
   online_calculator_bg,
 
-
   // @@@__________ blog __________@@@
   blog1_img,
 
@@ -66,5 +68,9 @@ export {
   wallet,
   digital_wallet_title,
   new_banner_img,
-  arrow_down
+  learning_articles_banner,
+
+  // @@@__________ icons __________@@@
+  arrow_down,
+  arrow_down_blue,
 };
