@@ -1,3 +1,4 @@
+import NewsSection from "@pagesComp/home/news/index";
 import FrequentQuestions from "@common/accordion/frequentQuestions";
 import Blogs from "@common/blogs/blogs";
 import CryptoMarketCards from "@common/cards/cardCryptoMarket";
@@ -22,6 +23,7 @@ export default function HomePage() {
       <Blogs />
       <DigitalWallet />
       <Warning />
+      <NewsSection />
       <SafeExchange />
       <FrequentQuestions />
     </>
