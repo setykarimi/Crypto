@@ -2,10 +2,15 @@ import { AiFillEye } from "react-icons/ai";
 import { PiPencilSimpleLineFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import { ArticleCardInitValue } from "./initialValue";
+import { img } from "@data";
 
 export default function ArticleCard({ article }: ArticleCardInitValue) {
   return (
-    <div className="md:p-8 p-2 rounded-xl bg-white flex flex-col md:gap-6 gap-3 items-center">
+    <div className="md:p-8 p-2 rounded-xl flex flex-col md:gap-6 gap-3 items-center"
+    style={{
+      background: `url(${img.article_card_bg}) no-repeat center right`,
+        backgroundSize: "cover",
+    }}>
       <img
         src={article.img}
         alt="learning article"
