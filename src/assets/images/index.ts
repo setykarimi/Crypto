@@ -20,7 +20,7 @@ import crypto_market_bg from "@assets/images/backgrounds/cryptoMarketBg.svg";
 import online_prices_bg from "@assets/images/backgrounds/onlinePricesBg.png";
 import banner_home_bg from "@assets/images/banner/bannerHomeBg.svg";
 import online_calculator_bg from "@assets/images/backgrounds/onlineCalculatorBg.svg";
-import article_car_bg from "@assets/images/backgrounds/articleCardBg.svg";
+import article_card_bg from "@assets/images/backgrounds/articleCardBg.svg";
 
 // @@@__________ blog __________@@@
 import blog1_img from "@assets/images/blog/blog1.png";
@@ -67,7 +67,7 @@ export {
   online_prices_bg,
   banner_home_bg,
   online_calculator_bg,
-  article_car_bg,
+  article_card_bg,
 
   // @@@__________ blog __________@@@
   blog1_img,
