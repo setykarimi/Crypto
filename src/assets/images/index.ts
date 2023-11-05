@@ -20,6 +20,7 @@ import crypto_market_bg from "@assets/images/backgrounds/cryptoMarketBg.svg";
 import online_prices_bg from "@assets/images/backgrounds/onlinePricesBg.png";
 import banner_home_bg from "@assets/images/banner/bannerHomeBg.svg";
 import online_calculator_bg from "@assets/images/backgrounds/onlineCalculatorBg.svg";
+import article_car_bg from "@assets/images/backgrounds/articleCardBg.svg";
 
 // @@@__________ blog __________@@@
 import blog1_img from "@assets/images/blog/blog1.png";
@@ -35,6 +36,14 @@ import learning_articles_banner from "@assets/images/items/learningArticlesBanne
 // @@@__________ icons __________@@@
 import arrow_down_blue from "@assets/images/icon/arrowDownBlue.svg";
 import arrow_down from "@assets/images/icon/arrowDown.svg";
+
+// @@@__________ articles __________@@@
+import article1_img from "@assets/images/learningArticles/article1.svg";
+import article2_img from "@assets/images/learningArticles/article2.svg";
+import article3_img from "@assets/images/learningArticles/article3.svg";
+import article4_img from "@assets/images/learningArticles/article4.svg";
+import article5_img from "@assets/images/learningArticles/article5.svg";
+import article6_img from "@assets/images/learningArticles/article6.svg";
 
 export {
   news1_img,
@@ -58,6 +67,7 @@ export {
   online_prices_bg,
   banner_home_bg,
   online_calculator_bg,
+  article_car_bg,
 
   // @@@__________ blog __________@@@
   blog1_img,
@@ -73,4 +83,12 @@ export {
   // @@@__________ icons __________@@@
   arrow_down,
   arrow_down_blue,
+
+  // @@@__________ articles __________@@@
+  article1_img,
+  article2_img,
+  article3_img,
+  article4_img,
+  article5_img,
+  article6_img,
 };
