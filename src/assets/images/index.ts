@@ -19,7 +19,7 @@ import footer_bg from "@assets/images/backgrounds/footerBg.webp";
 import crypto_market_bg from "@assets/images/backgrounds/cryptoMarketBg.webp";
 import online_prices_bg from "@assets/images/backgrounds/onlinePricesBg.webp";
 import banner_home_bg from "@assets/images/backgrounds/bannerHomeBg.webp";
-import online_calculator_bg from "@assets/images/backgrounds/onlineCalculatorBg.webp";
+import online_calculator_bg from "@assets/images/backgrounds/onlineCalculatorBg.svg";
 import article_card_bg from "@assets/images/backgrounds/articleCardBg.webp";
 
 // @@@__________ blog __________@@@
