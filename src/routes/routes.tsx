@@ -3,6 +3,7 @@ import Layout from "@layout/layout";
 import HomePage from "@pages/home";
 import NewsPage from "@pages/news";
 import { createBrowserRouter } from "react-router-dom";
+import OnlinePricesPage from "@pages/onlinePrices";
 
 export const routes = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ export const routes = createBrowserRouter([
       {
         path: "/learning-articles",
         element: <LearningArticlesPage />,
+      },
+      {
+        path: "/online-prices",
+        element: <OnlinePricesPage />,
       },
     ],
   },
