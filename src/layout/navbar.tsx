@@ -31,7 +31,7 @@ export default function Navbar() {
     },
     {
       title: "قیمت‌های آنلاین",
-      to: "/example2",
+      to: "/online-prices",
       icon: <MdInsertChart size={20} />,
     },
     {
