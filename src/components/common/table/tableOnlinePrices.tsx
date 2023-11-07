@@ -1,52 +1,7 @@
-import SectionsTitle from "@common/titles/titleSections";
 import { useCoins } from "@hooks/useCoins";
-import { BsArrowLeft } from "react-icons/bs";
 import { numberSeprator } from "@utils/numberSeprator";
-import { img } from "@data";
 
-export default function OnlinePricesTable() {
-  return (
-    <div
-      className="lg:mt-24 mt-12 pb-12 md:pt-24 pt-8 md:w-full w-[95%] mx-auto md:rounded-none rounded-3xl"
-      style={{
-        background: `url(${img.online_prices_bg}) no-repeat center top`,
-        backgroundSize: "cover",
-      }}
-    >
-      <section className="inner-container mx-auto px-0">
-        {/* Title Section*/}
-        <SectionsTitle number={2} title="آنلاین" subTitle="قیمت‌های">
-          <button className="border border-blue-primary text-blue-primary rounded-lg flex items-center gap-2 p-2 h-fit md:text-sm text-xs font-semiBold">
-            <span>تمامی قیمت‌ها</span>
-            <BsArrowLeft />
-          </button>
-        </SectionsTitle>
-        {/* End Title Section*/}
-
-        <div className="grid md:grid-cols-5 grid-cols-3 bg-white rounded-3xl">
-          <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
-            رمز ارزها
-          </span>
-          <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
-            قیمت لحظه‌ای
-          </span>
-          <span className="text-center md:block hidden text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
-            حجم در ۲۴ ساعت
-          </span>
-          <span className="text-center md:block hidden text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
-            تغییرات یک هفته اخیر
-          </span>
-          <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
-            معامله
-          </span>
-          <Table />
-        </div>
-      </section>
-    </div>
-  );
-}
-
-const Table = () => {
+export const OnlinePricesTable = () => {
   const { data: coins, error, isLoading } = useCoins("/coins?&limit=4");
 
   if (isLoading) {
@@ -71,15 +26,34 @@ const Table = () => {
     );
   }
 
-  return coins?.result.map((coin: any) => (
-    <TableRow
-      key={coin.price}
-      icon={coin.icon}
-      price={numberSeprator(Math.round(coin.price).toFixed(0))}
-      volume={numberSeprator(Math.round(coin.volume).toFixed(0))}
-      priceChange1w={coin.priceChange1w}
-    />
-  ));
+  return (
+    <div className="grid md:grid-cols-5 grid-cols-3 bg-white rounded-3xl">
+      <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
+        رمز ارزها
+      </span>
+      <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
+        قیمت لحظه‌ای
+      </span>
+      <span className="text-center md:block hidden text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
+        حجم در ۲۴ ساعت
+      </span>
+      <span className="text-center md:block hidden text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
+        تغییرات یک هفته اخیر
+      </span>
+      <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
+        معامله
+      </span>
+      {coins?.result.map((coin: any) => (
+        <TableRow
+          key={coin.price}
+          icon={coin.icon}
+          price={numberSeprator(Math.round(coin.price).toFixed(0))}
+          volume={numberSeprator(Math.round(coin.volume).toFixed(0))}
+          priceChange1w={coin.priceChange1w}
+        />
+      ))}
+    </div>
+  );
 };
 
 const TableRow = (props: any) => {
