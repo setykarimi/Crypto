@@ -52,7 +52,9 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="inner-container mx-auto py-4 lg:px-8 px-4 mt-4 rounded-2xl flex gap-8 items-center bg-white z-10 sticky top-4">
+    <div className="inner-container mx-auto py-4 lg:px-8 px-4 mt-4 rounded-2xl flex gap-8 items-center bg-white z-10 sticky top-4" style={{
+      boxShadow: '0px 12px 25px -9px rgba(83, 83, 83, 0.15)'
+    }}>
       <button className="lg:hidden block" onClick={showMenuHandler}>
         <HiMenu className="text-blue-800" size={22} />
       </button>
