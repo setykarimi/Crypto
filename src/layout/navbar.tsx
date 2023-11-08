@@ -46,7 +46,7 @@ export default function Navbar() {
     },
     {
       title: "ارتباط با ما",
-      to: "/example5",
+      to: "/contact-us",
       icon: <FaHeadphones size={20} />,
     },
   ];
