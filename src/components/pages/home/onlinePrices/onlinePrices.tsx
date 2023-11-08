@@ -1,4 +1,4 @@
-import { OnlinePricesTable } from "@common/table/tableOnlinePrices";
+import { OnlinePricesTable } from "@common/table/onlinePrices";
 import SectionsTitle from "@common/titles/titleSections";
 import { img } from "@data";
 import { BsArrowLeft } from "react-icons/bs";
