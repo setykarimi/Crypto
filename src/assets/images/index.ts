@@ -21,6 +21,7 @@ import online_prices_bg from "@assets/images/backgrounds/onlinePricesBg.webp";
 import banner_home_bg from "@assets/images/backgrounds/bannerHomeBg.webp";
 import online_calculator_bg from "@assets/images/backgrounds/onlineCalculatorBg.svg";
 import article_card_bg from "@assets/images/backgrounds/articleCardBg.webp";
+import contact_us_banner_bg from "@assets/images/backgrounds/contactUsBannerBg.svg";
 
 // @@@__________ blog __________@@@
 import blog1_img from "@assets/images/blog/blog1.png";
@@ -32,6 +33,7 @@ import wallet from "@assets/images/items/wallet.webp";
 import digital_wallet_title from "@assets/images/items/digitalWalletTitle.webp";
 import new_banner_img from "@assets/images/items/newsBannerItem.webp";
 import learning_articles_banner from "@assets/images/items/learningArticlesBanner.webp";
+import contact_us_banner_object from "@assets/images/items/contactUsBannerObject.svg";
 
 // @@@__________ icons __________@@@
 import arrow_down_blue from "@assets/images/icon/arrowDownBlue.webp";
@@ -68,6 +70,7 @@ export {
   banner_home_bg,
   online_calculator_bg,
   article_card_bg,
+  contact_us_banner_bg,
 
   // @@@__________ blog __________@@@
   blog1_img,
@@ -79,6 +82,7 @@ export {
   digital_wallet_title,
   new_banner_img,
   learning_articles_banner,
+  contact_us_banner_object,
 
   // @@@__________ icons __________@@@
   arrow_down,
