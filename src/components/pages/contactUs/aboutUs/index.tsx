@@ -7,7 +7,7 @@ export default function AboutUs() {
         <div className="address">
           <div className="title flex gap-2 items-center text-blue-900 ">
             <FaAddressBook />
-            <span className="text-2xl block font-bold">آدرس:</span>
+            <span className="lg:text-2xl text-xl block font-bold">آدرس:</span>
           </div>
           <p className="font-semiBold mr-6 mt-2">
             مازندران ، جویبار ، خیابان امام ، خیابان شهید امیری
@@ -16,7 +16,7 @@ export default function AboutUs() {
         <div className="email">
           <div className="title flex gap-2 items-center text-blue-900 ">
             <FaAddressBook />
-            <span className="text-2xl block font-bold">ایمیل:</span>
+            <span className="lg:text-2xl text-xl block font-bold">ایمیل:</span>
           </div>
           <p className="font-semiBold mr-6 mt-2 text-left">
             <span className="block">crypter@gmail.com</span>
@@ -26,7 +26,7 @@ export default function AboutUs() {
         <div className="phone_number">
           <div className="title flex gap-2 items-center text-blue-900 ">
             <FaAddressBook />
-            <span className="text-2xl block font-bold">شماره تماس:</span>
+            <span className="lg:text-2xl text-xl block font-bold">شماره تماس:</span>
           </div>
           <p className="font-semiBold mr-6 mt-2 text-left">
             <span className="block">011-45875</span>
