@@ -90,7 +90,7 @@ export default function Navbar() {
 
       <div className="flex gap-4 mr-auto">
         <Link
-          to=""
+          to="/profile"
           className="text-14 text-white bg-blue-primary py-2 lg:px-4 px-2 rounded-lg flex items-center gap-2"
         >
           <span className="lg:block hidden">ورود / ثبت نام</span>
