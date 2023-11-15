@@ -5,6 +5,7 @@ import NewsPage from "@pages/news";
 import { createBrowserRouter } from "react-router-dom";
 import OnlinePricesPage from "@pages/onlinePrices";
 import ContactUsPage from "@pages/contactUs";
+import ProfilePage from "@pages/profile";
 
 export const routes = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const routes = createBrowserRouter([
       {
         path: "/contact-us",
         element: <ContactUsPage />,
+      },
+      {
+        path: "/profile",
+        element: <ProfilePage />,
       },
     ],
   },
