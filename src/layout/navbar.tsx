@@ -26,7 +26,7 @@ export default function Navbar() {
     },
     {
       title: "خرید و فروش ارز دیجیتال",
-      to: "/example1",
+      to: "/buy-sell/digital-currency",
       icon: <RiMoneyDollarBoxFill size={20} />,
     },
     {
@@ -89,13 +89,13 @@ export default function Navbar() {
       </div>
 
       <div className="flex gap-4 mr-auto">
-        <Link
-          to="/profile"
+        <span
+      
           className="text-14 text-white bg-blue-primary py-2 lg:px-4 px-2 rounded-lg flex items-center gap-2"
         >
           <span className="lg:block hidden">ورود / ثبت نام</span>
           <BsPersonFill size={20} />
-        </Link>
+        </span>
         <Link
           to=""
           className="text-14 text-white bg-red-primary py-2 lg:px-4 px-2 rounded-lg flex items-center gap-2"
