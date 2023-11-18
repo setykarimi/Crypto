@@ -1,11 +1,11 @@
-import LearningArticlesPage from "@pages/learningArticles";
+import BuySellDigitalCurrency from "@pages/buy-sell-digital-currency";
 import Layout from "@layout/layout";
-import HomePage from "@pages/home";
-import NewsPage from "@pages/news";
-import { createBrowserRouter } from "react-router-dom";
-import OnlinePricesPage from "@pages/onlinePrices";
 import ContactUsPage from "@pages/contactUs";
-import ProfilePage from "@pages/profile";
+import HomePage from "@pages/home";
+import LearningArticlesPage from "@pages/learningArticles";
+import NewsPage from "@pages/news";
+import OnlinePricesPage from "@pages/onlinePrices";
+import { createBrowserRouter } from "react-router-dom";
 
 export const routes = createBrowserRouter([
   {
@@ -33,8 +33,8 @@ export const routes = createBrowserRouter([
         element: <ContactUsPage />,
       },
       {
-        path: "/profile",
-        element: <ProfilePage />,
+        path: "/buy-sell/digital-currency",
+        element: <BuySellDigitalCurrency />,
       },
     ],
   },
