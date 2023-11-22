@@ -1,14 +1,13 @@
-import { useCoins } from "@hooks/useCoins";
 import ReactEcharts from "echarts-for-react";
 
 export default function LinearChart() {
-  const {
-    data: coins,
-    error,
-    isLoading,
-  } = useCoins(`/coins/bitcoin/charts?period=24h
-    `);
-  console.log(coins);
+  // const {
+  //   data: coins,
+  //   error,
+  //   isLoading,
+  // } = useCoins(`/coins/bitcoin/charts?period=24h
+  //   `);
+  // console.log(coins);
 
   let option;
   const upColor = "#ec0000";
