@@ -31,6 +31,7 @@
 body, html{
   font-family: 'YekanBakh';
   direction: rtl;
+  background: #F6FCFE;
 }
 
 .rtl{
@@ -76,4 +77,14 @@ body, html{
   body, html{
    font-size: 14px;
   }
+}
+
+.echarts-for-react{
+  height: 100px!important;
+}
+.echarts-for-react div{
+  height: inherit!important;
+}
+.echarts-for-react div canvas{
+  height: inherit!important;
 }
