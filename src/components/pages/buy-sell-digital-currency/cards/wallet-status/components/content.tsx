@@ -1,4 +1,4 @@
-import { IoMdArrowRoundUp } from "react-icons/io";
+import { IoMdArrowRoundDown, IoMdArrowRoundUp } from "react-icons/io";
 
 export default function MyWalletStatusContent() {
   return (
@@ -25,34 +25,39 @@ export default function MyWalletStatusContent() {
           </div>
         </div>
       </div>
-      <div className="grid md:grid-cols-3">
-        <div className="flex">
+      <div className="grid md:grid-cols-3 ">
+        <div className="flex items-center justify-center">
           <div>
-          <span className="block text-center text-green-primary text-sm font-semiBold">
-            میزان سود و زیان کل
-          </span>
-          <span className="block text-center text-green-primary text-sm font-bold">
-            ۲۰.۰۰۰ تومان
-          </span>
+            <span className="block text-center text-green-primary text-sm font-semiBold">
+              میزان سود و زیان کل
+            </span>
+            <span className="block text-center text-green-primary text-sm font-bold">
+              ۲۰.۰۰۰ تومان
+            </span>
           </div>
-          <IoMdArrowRoundUp  />
-
+          <IoMdArrowRoundUp color="#18CE2A" />
         </div>
-        <div>
-          <span className="block text-center text-red-500 text-sm font-semiBold">
-            میزان ضرر
-          </span>
-          <span className="block text-center text-red-300 text-sm font-bold">
-            ۵۳.۴۸۰ تومان
-          </span>
+        <div className="flex items-center justify-center">
+          <div>
+            <span className="block text-center text-red-500 text-sm font-semiBold">
+              میزان ضرر
+            </span>
+            <span className="block text-center text-red-300 text-sm font-bold">
+              ۵۳.۴۸۰ تومان
+            </span>
+          </div>
+          <IoMdArrowRoundDown color="#F87C6B" />
         </div>
-        <div className="">
-          <span className="block text-center text-green-primary text-sm font-semiBold">
-            میزان سود
-          </span>
-          <span className="block text-center text-green-primary text-sm font-bold">
-            ۷۸.۴۸۰ تومان
-          </span>
+        <div className="flex items-center justify-center">
+          <div>
+            <span className="block text-center text-green-primary text-sm font-semiBold">
+              میزان سود
+            </span>
+            <span className="block text-center text-green-primary text-sm font-bold">
+              ۷۸.۴۸۰ تومان
+            </span>
+          </div>
+          <IoMdArrowRoundUp color="#18CE2A" />
         </div>
       </div>
     </div>
