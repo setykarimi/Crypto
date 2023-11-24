@@ -73,17 +73,18 @@ body, html{
     max-width: 95%;
   }
 }
-@media(max-width: 768px){
+@media(max-width: 576px){
   body, html{
    font-size: 14px;
   }
 }
 
 .echarts-for-react{
-  height: 100px!important;
+  height: 90px!important;
 }
 .echarts-for-react div{
   height: inherit!important;
+  width: inherit!important;
 }
 .echarts-for-react div canvas{
   height: inherit!important;
