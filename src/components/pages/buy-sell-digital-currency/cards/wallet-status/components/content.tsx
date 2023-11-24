@@ -2,33 +2,35 @@ import { IoMdArrowRoundDown, IoMdArrowRoundUp } from "react-icons/io";
 
 export default function MyWalletStatusContent() {
   return (
-    <div className="flex flex-col gap-3">
-      <div className="grid md:grid-cols-3 gap-2 justify-start items-start">
+    <div className="flex flex-col md:gap-3 gap-8">
+      <div className="grid md:grid-cols-3 grid-cols-2 md:gap-2 gap-4 justify-start items-start">
         <div>
-          <span className="text-blue-500 font-black text-lg text-center block">
+          <span className="text-blue-500 font-black text-lg md:text-center block">
             وضعیت حساب:
           </span>
         </div>
         <div>
-          <span className="block text-center text-sm whitespace-nowrap text-blue-700 font-bold">
+          <span className="block text-center md:text-xs text-sm whitespace-nowrap text-blue-700 font-bold">
             موجودی کل حساب به تومان:
           </span>
-          <span className="block text-center text-sm text-blue-700 font-extraBold">
+          <span className="block text-center md:text-sm text-blue-700 font-extraBold">
             ۱.۲۵۴.۶۴۸.۰۰۰
           </span>
         </div>
-        <div className="flex justify-end">
+        <div className="flex md:justify-end justify-center md:col-span-1 col-span-2">
           <div className="w-fit bg-blue-50 text-blue-primary px-2 py-1 rounded-full">
-            <select className="text-xs bg-transparent font-semiBold">
-              <option>۲۴ ساعت اخیر</option>
+            <select className="md:text-xs bg-transparent font-semiBold outline-none">
+              <option>1 ساعت اخیر</option>
+              <option>1 روز اخیر</option>
+              <option>1 هفته اخیر</option>
             </select>
           </div>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 ">
+      <div className="grid grid-cols-3 gap-2">
         <div className="flex items-center justify-center">
           <div>
-            <span className="block text-center text-green-primary text-sm font-semiBold">
+            <span className="block text-center text-green-primary text-sm font-semiBold whitespace-nowrap">
               میزان سود و زیان کل
             </span>
             <span className="block text-center text-green-primary text-sm font-bold">
