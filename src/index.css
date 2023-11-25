@@ -79,6 +79,10 @@ body, html{
   }
 }
 
+.card-shadow{
+  box-shadow: 0px 12px 25px -9px rgba(83, 83, 83, 0.15);
+}
+
 .echarts-for-react{
   height: 90px!important;
 }
