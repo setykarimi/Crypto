@@ -16,7 +16,7 @@ export default function MyInfoCard() {
     },
   ];
   return (
-    <div className="bg-[#CCE0EB] p-6 rounded-2xl grid grid-cols-3 gap-2 items-center">
+    <div className="bg-[#CCE0EB] p-6 rounded-2xl grid grid-cols-3 gap-2 items-center h-fit">
       <div className="w-16 h-16 bg-white rounded-full"></div>
       <div className="col-span-2 flex flex-col gap-2">
         {my_data.map(({ title, value }) => (
