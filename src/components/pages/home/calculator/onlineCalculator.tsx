@@ -1,6 +1,6 @@
 import { img } from "@data";
 import SectionsTitle from "@common/titles/titleSections";
-import Calculator from "./calculator";
+import Calculator from "@common/calculator";
 
 export default function OnlineCalculator() {
   return (
