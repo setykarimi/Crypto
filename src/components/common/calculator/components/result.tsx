@@ -1,4 +1,3 @@
-import React from 'react'
 import { HiOutlineSwitchHorizontal } from 'react-icons/hi'
 
 export default function Result() {
