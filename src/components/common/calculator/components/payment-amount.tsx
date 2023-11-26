@@ -1,4 +1,10 @@
+import { useExchangeStore } from "@store/exchange";
+
 export default function PaymentAmount({ data }: any) {
+  const params = useExchangeStore((state) => state.params);
+  const setFrom = useExchangeStore((state) => state.setFrom);
+  const setTimeStamp = useExchangeStore((state) => state.setTimeStamp);
+
   return (
     <div className="mt-4">
       <label className="text-blue-primary font-semiBold mb-2 text-sm block">
@@ -9,10 +15,17 @@ export default function PaymentAmount({ data }: any) {
           className="bg-transparent w-2/3 py-2 text-left outline-none placeholder:text-xs placeholder:text-gray-300 placeholder:text-right text-gray-400 text-sm ltr"
           placeholder="مبلغ مورد نظر خود را وارد کنید"
           type="number"
+          value={params.timestamp}
+          onChange={(e) => setTimeStamp(e.target.value)}
         />
-        <select className="w-1/3 bg-transparent outline-none">
+        <select
+          className="w-1/3 bg-transparent outline-none"
+          onChange={(e) => setFrom(e.target.value)}
+        >
           {data?.map(({ name }: any) => (
-            <option className="text-left m-4">{name}</option>
+            <option className="text-left m-4" value={name}>
+              {name}
+            </option>
           ))}
         </select>
       </div>
