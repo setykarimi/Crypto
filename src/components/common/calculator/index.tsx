@@ -1,4 +1,6 @@
+import { getCoinsPriceExchange } from "@api/get-coins-price-exchange";
 import { useCoins } from "@hooks/useCoins";
+import { useExchangeStore } from "@store/exchange";
 import { RiSettings5Fill } from "react-icons/ri";
 import { TbSwitchVertical } from "react-icons/tb";
 import ConvertTo from "./components/convert-to";
@@ -9,6 +11,13 @@ import { CalculatorPropsType } from "./type";
 
 export default function Calculator({ customClassName }: CalculatorPropsType) {
   const { data: coins, isLoading } = useCoins("/coins?&limit=10");
+  const params = useExchangeStore((state) => state.params);
+
+  const submitHandler = () => {
+    getCoinsPriceExchange(params)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  };
 
   return (
     <div
@@ -29,7 +38,11 @@ export default function Calculator({ customClassName }: CalculatorPropsType) {
       </div>
 
       {/* Start مبلغ پرداختی */}
-      {isLoading ? <LoadingSkeleton /> : <PaymentAmount data={coins?.result.splice(5)}/>}
+      {isLoading ? (
+        <LoadingSkeleton />
+      ) : (
+        <PaymentAmount data={coins?.result.splice(5)} />
+      )}
       {/* End مبلغ پرداختی */}
 
       {/* Start Switch button */}
@@ -49,7 +62,10 @@ export default function Calculator({ customClassName }: CalculatorPropsType) {
 
       <Result />
 
-      <button className="bg-red-700 text-white rounded-xl py-2 font-bold mt-4 w-full">
+      <button
+        className="bg-red-700 text-white rounded-xl py-2 font-bold mt-4 w-full"
+        onClick={submitHandler}
+      >
         تبادل کن
       </button>
     </div>
