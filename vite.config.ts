@@ -14,6 +14,8 @@ export default defineConfig({
       "@layout": "/src/layout/",
       "@hooks": "/src/hooks/",
       "@utils": "/src/utils/",
+      "@store": "/src/store/",
+      "@api": "/src/api/",
     },
   },
 })
