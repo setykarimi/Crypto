@@ -91,7 +91,7 @@ const CryptoGuide = () => {
       <span className="font-bold text-lg block mb-4">راهنمای کریپتر</span>
       <ul className="list-disc pr-4">
         {list.map((title) => (
-          <li>
+          <li key={title}>
             <Link to="" className="text-white text-sm block mt-2 font-semiBold">
               {title}
             </Link>
@@ -119,7 +119,7 @@ const QuickAccess = () => {
       <span className="font-bold text-lg block mb-4">دسترسی سریع</span>
       <ul className="list-disc pr-4">
         {list.map((title) => (
-          <li>
+          <li key={title}>
             <Link to="" className="text-white text-sm block mt-2 font-semiBold">
               {title}
             </Link>
@@ -144,7 +144,7 @@ const ImportantLinks = () => {
       <span className="font-bold text-lg block mb-4">لینک‌های مهم</span>
       <ul className="list-disc pr-4">
         {list.map((title) => (
-          <li>
+          <li key={title}>
             <Link to="" className="text-white text-sm block mt-2 font-semiBold">
               {title}
             </Link>
