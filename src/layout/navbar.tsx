@@ -73,6 +73,7 @@ export default function Navbar() {
           <button onClick={closeMenuHandler} className="lg:hidden block mb-8"><FaSignOutAlt className="text-blue-primary" size={32}/></button>
           {menus.map(({ title, to, icon }) => (
             <NavLink
+            key={title}
               className={({ isActive }) =>
                 isActive
                   ? "text-blue-primary border-b-2 border-b-blue-primary font-bold pb-1 flex gap-2 items-center lg:max-w-auto max-w-32 w-fit text-right whitespace-nowrap"
