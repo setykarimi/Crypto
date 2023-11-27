@@ -20,7 +20,7 @@ export default function MyInfoCard() {
       <div className="w-16 h-16 bg-white rounded-full"></div>
       <div className="col-span-2 flex flex-col gap-2">
         {my_data.map(({ title, value }) => (
-          <div className="flex justify-between items-center text-gray-800">
+          <div className="flex justify-between items-center text-gray-800" key={title}>
             <span className="text-sm font-bold">{title}</span>
             <span className="text-sm">{value}</span>
           </div>
