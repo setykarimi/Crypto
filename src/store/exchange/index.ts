@@ -7,9 +7,11 @@ interface ExchangeState {
     to: string;
     timestamp: number | string;
   };
+  result: number | null;
   setFrom: (by: string) => void;
   setTo: (by: string) => void;
   setTimeStamp: (by: string) => void;
+  setResult: (by: number) => void;
 }
 
 export const useExchangeStore = create<ExchangeState>()(
@@ -17,9 +19,10 @@ export const useExchangeStore = create<ExchangeState>()(
     (set) => ({
       params: {
         from: "BTC",
-        to: "ETH",
+        to: "USDC",
         timestamp: "1636315200",
       },
+      result: null,
       setFrom: (payload) =>
         set((state) => ({
           params: {
@@ -43,6 +46,10 @@ export const useExchangeStore = create<ExchangeState>()(
             to: state.params.to,
             timestamp: +payload,
           },
+        })),
+      setResult: (payload) =>
+        set(() => ({
+          result: +payload,
         })),
     }),
     { name: "exchangeStore" }
