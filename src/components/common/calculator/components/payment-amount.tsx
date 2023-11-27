@@ -1,9 +1,17 @@
+import { useCoins } from "@hooks/useCoins";
 import { useExchangeStore } from "@store/exchange";
+import LoadingSkeleton from "./loading-skeleton";
 
-export default function PaymentAmount({ data }: any) {
+export default function PaymentAmount() {
+  const { data: coins, isLoading } = useCoins("/coins?&limit=5");
+
   const params = useExchangeStore((state) => state.params);
   const setFrom = useExchangeStore((state) => state.setFrom);
   const setTimeStamp = useExchangeStore((state) => state.setTimeStamp);
+
+  if (isLoading) {
+    return <LoadingSkeleton />;
+  }
 
   return (
     <div className="mt-4">
@@ -22,8 +30,8 @@ export default function PaymentAmount({ data }: any) {
           className="w-1/3 bg-transparent outline-none"
           onChange={(e) => setFrom(e.target.value)}
         >
-          {data?.map(({ name }: any) => (
-            <option className="text-left m-4" value={name}>
+          {coins?.result?.map(({ name }: any) => (
+            <option key={name} className="text-left m-4" value={name}>
               {name}
             </option>
           ))}
