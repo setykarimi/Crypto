@@ -2,8 +2,6 @@ import { img, static_data } from "@data";
 import ArticleCard from "./card/card";
 
 export default function Articles() {
-  console.log(static_data.learning_articles);
-
   return (
     <div className="lg:mt-24 mt-12 pb-12">
       {/* Title Section*/}
@@ -16,7 +14,7 @@ export default function Articles() {
 
         <div className="grid lg:grid-cols-3 grid-cols-2 xl:gap-12 md:gap-8 gap-4 mt-12">
           {static_data.learning_articles.map((article) => (
-            <ArticleCard article={article}/>
+            <ArticleCard article={article} />
           ))}
         </div>
       </section>
