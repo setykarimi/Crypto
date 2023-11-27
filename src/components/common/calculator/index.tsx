@@ -1,22 +1,24 @@
 import { getCoinsPriceExchange } from "@api/get-coins-price-exchange";
-import { useCoins } from "@hooks/useCoins";
 import { useExchangeStore } from "@store/exchange";
 import { RiSettings5Fill } from "react-icons/ri";
 import { TbSwitchVertical } from "react-icons/tb";
 import ConvertTo from "./components/convert-to";
-import LoadingSkeleton from "./components/loading-skeleton";
 import PaymentAmount from "./components/payment-amount";
 import Result from "./components/result";
 import { CalculatorPropsType } from "./type";
+import toast from "react-hot-toast";
 
 export default function Calculator({ customClassName }: CalculatorPropsType) {
-  const { data: coins, isLoading } = useCoins("/coins?&limit=10");
   const params = useExchangeStore((state) => state.params);
+  const setResult = useExchangeStore((state) => state.setResult);
 
   const submitHandler = () => {
     getCoinsPriceExchange(params)
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+      .then((res) => setResult(res.price))
+      .catch(() => {
+        setResult(0);
+        toast.error("متاسفانه خطایی رخ داده است.");
+      });
   };
 
   return (
@@ -38,11 +40,7 @@ export default function Calculator({ customClassName }: CalculatorPropsType) {
       </div>
 
       {/* Start مبلغ پرداختی */}
-      {isLoading ? (
-        <LoadingSkeleton />
-      ) : (
-        <PaymentAmount data={coins?.result.splice(5)} />
-      )}
+      <PaymentAmount />
       {/* End مبلغ پرداختی */}
 
       {/* Start Switch button */}
@@ -52,12 +50,7 @@ export default function Calculator({ customClassName }: CalculatorPropsType) {
       {/* End Switch button */}
 
       {/* Start تبدیل به */}
-      {isLoading ? (
-        <LoadingSkeleton />
-      ) : (
-        <ConvertTo data={coins?.result.splice(0, 5)} />
-      )}
-
+      <ConvertTo />
       {/* End تبدیل به */}
 
       <Result />
