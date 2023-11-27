@@ -1,7 +1,14 @@
+import { useCoins } from "@hooks/useCoins";
 import { useExchangeStore } from "@store/exchange";
+import LoadingSkeleton from "./loading-skeleton";
 
-export default function ConvertTo({ data }: any) {
+export default function ConvertTo() {
+  const { data: coins, isLoading } = useCoins("/coins?&limit=5&page=2");
+
   const setTo = useExchangeStore((state) => state.setTo);
+  if (isLoading) {
+    return <LoadingSkeleton />;
+  }
   return (
     <div>
       <label className="text-blue-primary font-semiBold mb-2 text-sm block">
@@ -12,9 +19,11 @@ export default function ConvertTo({ data }: any) {
           className="w-full py-1 bg-transparent outline-none"
           onChange={(e) => setTo(e.target.value)}
         >
-          <option hidden selected className="text-left m-4">انتخاب کنید</option>
-          {data?.map(({ name }: any) => (
-            <option className="text-left m-4" value={name}>
+          <option hidden className="text-right m-4">
+            انتخاب کنید
+          </option>
+          {coins?.result?.map(({ name }: any) => (
+            <option key={name} className="text-left m-4" value={name}>
               {name}
             </option>
           ))}
