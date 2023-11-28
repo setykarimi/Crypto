@@ -1,7 +1,8 @@
-import WalletStatus from "@pagesComp/buy-sell-digital-currency/cards/wallet-status";
-import MyInfoCard from "@pagesComp/buy-sell-digital-currency/cards/my-info";
 import Calculator from "@common/calculator";
 import LiveDemo from "@pagesComp/buy-sell-digital-currency/cards/live-demo";
+import MyInfoCard from "@pagesComp/buy-sell-digital-currency/cards/my-info";
+import WalletStatus from "@pagesComp/buy-sell-digital-currency/cards/wallet-status";
+import WholeChart from "@pagesComp/buy-sell-digital-currency/chart";
 
 export default function BuySellDigitalCurrency() {
   return (
@@ -12,6 +13,7 @@ export default function BuySellDigitalCurrency() {
       </div>
       <div className="lg:col-span-3 col-span-1">
         <WalletStatus />
+        <WholeChart />
         <LiveDemo/>
       </div>
     </div>
