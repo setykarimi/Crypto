@@ -83,13 +83,13 @@ body, html{
   box-shadow: 0px 12px 25px -9px rgba(83, 83, 83, 0.15);
 }
 
-.echarts-for-react{
+.pie_chart .echarts-for-react{
   height: 90px!important;
 }
-.echarts-for-react div{
+.pie_chart .echarts-for-react div{
   height: inherit!important;
   width: inherit!important;
 }
-.echarts-for-react div canvas{
+.pie_chart .echarts-for-react div canvas{
   height: inherit!important;
 }
