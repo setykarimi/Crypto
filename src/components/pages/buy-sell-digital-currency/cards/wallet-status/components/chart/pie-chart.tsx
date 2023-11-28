@@ -31,7 +31,7 @@ export default function PieChart({ data }: any) {
 
   return (
     <div>
-      <div className="relative">
+      <div className="relative pie_chart">
         <ReactEcharts option={option} className="-mt-4" />
         <span className="absolute top-0 bottom-0 m-auto left-0 right-0 block w-fit h-fit md:text-xs text-sm font-bold text-gray-900 ltr">
          {data?.priceChange1d}%
