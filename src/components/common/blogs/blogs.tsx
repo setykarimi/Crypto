@@ -1,6 +1,7 @@
 import SectionsTitle from "@common/titles/titleSections";
 import { img } from "@data";
 import BlogCard from "./blogCard";
+import { Link } from "react-router-dom";
 
 export default function Blogs() {
   return (
@@ -14,9 +15,9 @@ export default function Blogs() {
       <section className="inner-container mx-auto md:px-0 px-2">
         {/* Title Section*/}
         <SectionsTitle number={5} title="کریپتر" subTitle="مقالات">
-          <button className="bg-red-700 rounded-lg py-2 px-4 h-fit md:text-sm text-xs font-semiBold text-white">
+          <Link to="/learning-articles" className="bg-red-700 rounded-lg py-2 px-4 h-fit md:text-sm text-xs font-semiBold text-white">
             بیشتر ...
-          </button>
+          </Link>
         </SectionsTitle>
         {/* End Title Section*/}
 
