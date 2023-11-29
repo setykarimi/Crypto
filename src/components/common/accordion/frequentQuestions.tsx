@@ -1,6 +1,7 @@
 import SectionsTitle from "@common/titles/titleSections";
 import { img } from "@data";
 import Accordion from "./accordion";
+import { Link } from "react-router-dom";
 
 export default function FrequentQuestions() {
   const accordionData = [
@@ -29,9 +30,9 @@ export default function FrequentQuestions() {
       <section className="inner-container mx-auto px-0">
         {/* Title Section*/}
         <SectionsTitle number={8} title="متداول" subTitle="سوالات">
-          <button className="bg-red-700 rounded-lg py-2 px-4 h-fit md:text-sm text-xs font-semiBold text-white">
+          <Link to="/contact-us" className="bg-red-700 rounded-lg py-2 px-4 h-fit md:text-sm text-xs font-semiBold text-white">
             بیشتر ...
-          </button>
+          </Link>
         </SectionsTitle>
         {accordionData.map(({ content, title }) => (
           <Accordion title={title} content={content} />
