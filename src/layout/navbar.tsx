@@ -15,8 +15,8 @@ export default function Navbar() {
     setShowMenu(true);
   };
   const closeMenuHandler = () => {
-    setShowMenu(false)
-  }
+    setShowMenu(false);
+  };
   // menus list
   const menus = [
     {
@@ -24,11 +24,11 @@ export default function Navbar() {
       to: "/",
       icon: <HiHome size={20} />,
     },
-    {
-      title: "خرید و فروش ارز دیجیتال",
-      to: "/buy-sell/digital-currency",
-      icon: <RiMoneyDollarBoxFill size={20} />,
-    },
+    // {
+    //   title: "خرید و فروش ارز دیجیتال",
+    //   to: "/buy-sell/digital-currency",
+    //   icon: <RiMoneyDollarBoxFill size={20} />,
+    // },
     {
       title: "قیمت‌های آنلاین",
       to: "/online-prices",
@@ -52,9 +52,12 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="inner-container mx-auto py-4 lg:px-8 px-4 mt-4 rounded-2xl flex gap-8 items-center bg-white z-10 sticky top-4" style={{
-      boxShadow: '0px 12px 25px -9px rgba(83, 83, 83, 0.15)'
-    }}>
+    <div
+      className="inner-container mx-auto py-4 lg:px-8 px-4 mt-4 rounded-2xl flex gap-8 items-center bg-white z-10 sticky top-4"
+      style={{
+        boxShadow: "0px 12px 25px -9px rgba(83, 83, 83, 0.15)",
+      }}
+    >
       <button className="lg:hidden block" onClick={showMenuHandler}>
         <HiMenu className="text-blue-800" size={22} />
       </button>
@@ -70,10 +73,12 @@ export default function Navbar() {
         } `}
       >
         <div className="flex lg:flex-row flex-col gap-4 overflow-hidden lg:w-auto w-54">
-          <button onClick={closeMenuHandler} className="lg:hidden block mb-8"><FaSignOutAlt className="text-blue-primary" size={32}/></button>
+          <button onClick={closeMenuHandler} className="lg:hidden block mb-8">
+            <FaSignOutAlt className="text-blue-primary" size={32} />
+          </button>
           {menus.map(({ title, to, icon }) => (
             <NavLink
-            key={title}
+              key={title}
               className={({ isActive }) =>
                 isActive
                   ? "text-blue-primary border-b-2 border-b-blue-primary font-bold pb-1 flex gap-2 items-center lg:max-w-auto max-w-32 w-fit text-right whitespace-nowrap"
@@ -90,13 +95,13 @@ export default function Navbar() {
       </div>
 
       <div className="flex gap-4 mr-auto">
-        <span
-      
+        <Link
+          to="/buy-sell/digital-currency"
           className="text-14 text-white bg-blue-primary py-2 lg:px-4 px-2 rounded-lg flex items-center gap-2"
         >
           <span className="lg:block hidden">ورود / ثبت نام</span>
           <BsPersonFill size={20} />
-        </span>
+        </Link>
         <Link
           to=""
           className="text-14 text-white bg-red-primary py-2 lg:px-4 px-2 rounded-lg flex items-center gap-2"
