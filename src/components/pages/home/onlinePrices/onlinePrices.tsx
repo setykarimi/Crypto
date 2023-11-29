@@ -2,6 +2,7 @@ import { OnlinePricesTable } from "@common/table/onlinePrices";
 import SectionsTitle from "@common/titles/titleSections";
 import { img } from "@data";
 import { BsArrowLeft } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function OnlinePrices() {
   return (
@@ -16,7 +17,7 @@ export default function OnlinePrices() {
         {/* Title Section*/}
         <SectionsTitle number={2} title="آنلاین" subTitle="قیمت‌های">
           <button className="border border-blue-primary text-blue-primary rounded-lg flex items-center gap-2 p-2 h-fit md:text-sm text-xs font-semiBold">
-            <span>تمامی قیمت‌ها</span>
+            <Link to="/online-prices">تمامی قیمت‌ها</Link>
             <BsArrowLeft />
           </button>
         </SectionsTitle>
