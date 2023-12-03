@@ -1,5 +1,5 @@
 import { img } from "@data";
-import { NewsInitType } from "./initialType";
+import { NewsInitType } from "./type";
 
 export const news: NewsInitType = [
   {
