@@ -5,7 +5,6 @@ import { FaHeadphones, FaSignOutAlt } from "react-icons/fa";
 import { HiHome, HiMenu } from "react-icons/hi";
 import { MdInsertChart } from "react-icons/md";
 import { PiPencilSimpleLineFill, PiTelevisionSimpleFill } from "react-icons/pi";
-import { RiMoneyDollarBoxFill } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
