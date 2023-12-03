@@ -7,7 +7,7 @@ export default function Transactions() {
       <h4 className="font-bold text-blue-primary text-lg bg-white block pb-2">
         معامله‌ها
       </h4>
-      <div className="lg:max-h-[7.5rem] h-full overflow-auto">
+      <div className="xl:max-h-[7.5rem] lg:max-h-[13.5rem] h-full overflow-auto">
         {transactions.map((item) => (
           <TransactionItem item={item} />
         ))}
