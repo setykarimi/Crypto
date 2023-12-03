@@ -1,5 +1,5 @@
 import { img } from "@data";
-import { ArticlesInitType } from "./initialType";
+import { ArticlesInitType } from "./type";
 
 export const learning_articles: ArticlesInitType = [
   {
