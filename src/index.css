@@ -93,3 +93,18 @@ body, html{
 .pie_chart .echarts-for-react div canvas{
   height: inherit!important;
 }
+
+
+
+::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #F6FCFE;        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b2b2b2;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
