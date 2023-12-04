@@ -1,6 +1,7 @@
 import { useCoins } from "@hooks/useCoins";
 import { timestampConvertor } from "@utils/timestamp-convertor";
 import ReactEcharts from "echarts-for-react";
+import LinearChartSkeleton from "./skeleton";
 
 export default function LinearChart() {
   const { data: coins, isLoading } = useCoins(`/coins/bitcoin/charts?period=all
@@ -139,5 +140,5 @@ export default function LinearChart() {
     ],
   };
 
-  return isLoading ? <></> : <ReactEcharts option={option} />;
+  return isLoading ? <LinearChartSkeleton /> : <ReactEcharts option={option} />;
 }
