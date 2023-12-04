@@ -1,6 +1,9 @@
+import { useWallet } from "@store/wallet";
 import { IoMdArrowRoundDown, IoMdArrowRoundUp } from "react-icons/io";
 
 export default function MyWalletStatusContent() {
+  const setTime = useWallet((state) => state.setTime);
+
   return (
     <div className="flex flex-col md:gap-3 gap-8">
       <div className="grid md:grid-cols-3 grid-cols-2 md:gap-2 gap-4 justify-start items-start">
@@ -19,10 +22,13 @@ export default function MyWalletStatusContent() {
         </div>
         <div className="flex md:justify-end justify-center md:col-span-1 col-span-2">
           <div className="w-fit bg-blue-50 text-blue-primary px-2 py-1 rounded-full">
-            <select className="md:text-xs bg-transparent font-semiBold outline-none">
-              <option>1 ساعت اخیر</option>
-              <option>1 روز اخیر</option>
-              <option>1 هفته اخیر</option>
+            <select
+              className="md:text-xs bg-transparent font-semiBold outline-none"
+              onChange={(e) => setTime(e.target.value)}
+            >
+              <option value="priceChange1d">1 روز اخیر</option>
+              <option value="priceChange1h">1 ساعت اخیر</option>
+              <option value="priceChange1w">1 هفته اخیر</option>
             </select>
           </div>
         </div>
