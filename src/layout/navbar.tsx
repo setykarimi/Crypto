@@ -23,11 +23,6 @@ export default function Navbar() {
       to: "/",
       icon: <HiHome size={20} />,
     },
-    // {
-    //   title: "خرید و فروش ارز دیجیتال",
-    //   to: "/buy-sell/digital-currency",
-    //   icon: <RiMoneyDollarBoxFill size={20} />,
-    // },
     {
       title: "قیمت‌های آنلاین",
       to: "/online-prices",
