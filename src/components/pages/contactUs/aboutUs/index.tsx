@@ -10,7 +10,7 @@ export default function AboutUs() {
             <span className="lg:text-2xl text-xl block font-bold">آدرس:</span>
           </div>
           <p className="font-semiBold mr-6 mt-2">
-            مازندران ، جویبار ، خیابان امام ، خیابان شهید امیری
+            تهران - خیابان بهشتی - خیابان قائم مقام فراهانی - خیابان مشاهیر
           </p>
         </div>
         <div className="email">
