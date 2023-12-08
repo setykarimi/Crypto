@@ -1,11 +1,11 @@
 import BuySellDigitalCurrency from "@pages/buy-sell-digital-currency";
 import Layout from "@layout/layout";
-import ContactUsPage from "@pages/contactUs";
 import HomePage from "@pages/home";
-import LearningArticlesPage from "@pages/learningArticles";
+import LearningArticlesPage from "@pages/learning-articles";
 import NewsPage from "@pages/news";
-import OnlinePricesPage from "@pages/onlinePrices";
+import OnlinePricesPage from "@pages/online-prices";
 import { createBrowserRouter } from "react-router-dom";
+import ContactUsPage from "@pages/contact-us";
 
 export const routes = createBrowserRouter([
   {

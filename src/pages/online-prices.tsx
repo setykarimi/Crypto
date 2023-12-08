@@ -1,7 +1,7 @@
-import { OnlinePricesTable } from "@common/table/onlinePrices";
-import CryptoMarketCards from "@common/cards/cardCryptoMarket";
+import { OnlinePricesTable } from "@common/table/online-prices";
+import CryptoMarketCards from "@common/cards/card-crypto-market";
 import { useState } from "react";
-import SafeExchange from "@pagesComp/home/content/safeExchange";
+import SafeExchange from "@pagesComp/home/content/safe-exchange";
 
 export default function OnlinePricesPage() {
   const [limit, setLimit] = useState<number>(10);

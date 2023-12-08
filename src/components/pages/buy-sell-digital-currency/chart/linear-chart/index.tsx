@@ -1,4 +1,4 @@
-import { useCoins } from "@hooks/useCoins";
+import { useCoins } from "@hooks/use-coins";
 import { timestampConvertor } from "@utils/timestamp-convertor";
 import ReactEcharts from "echarts-for-react";
 import LinearChartSkeleton from "./skeleton";

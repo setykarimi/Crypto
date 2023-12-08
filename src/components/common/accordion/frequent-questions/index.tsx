@@ -1,6 +1,6 @@
-import SectionsTitle from "@common/titles/titleSections";
+import SectionsTitle from "@common/titles/section";
 import { img } from "@data";
-import Accordion from "./accordion";
+import Accordion from "..";
 import { Link } from "react-router-dom";
 
 export default function FrequentQuestions() {
@@ -35,7 +35,7 @@ export default function FrequentQuestions() {
           </Link>
         </SectionsTitle>
         {accordionData.map(({ content, title }) => (
-          <Accordion title={title} content={content} />
+          <Accordion key={title} title={title} content={content} />
         ))}
       </section>
     </div>

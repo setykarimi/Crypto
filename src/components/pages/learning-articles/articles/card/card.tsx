@@ -1,8 +1,8 @@
 import { AiFillEye } from "react-icons/ai";
 import { PiPencilSimpleLineFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
-import { ArticleCardInitValue } from "./initialValue";
 import { img } from "@data";
+import { ArticleCardInitValue } from "./initial-value";
 
 export default function ArticleCard({ article }: ArticleCardInitValue) {
   return (

@@ -1,4 +1,4 @@
-import { useCoins } from "@hooks/useCoins";
+import { useCoins } from "@hooks/use-coins";
 import LinearChart from "./linear-chart";
 
 export default function WholeChart() {

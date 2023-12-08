@@ -1,4 +1,4 @@
-import NewsCard from "./newsCard";
+import NewsCard from "./news-card";
 import { NewsType } from "./type";
 
 export default function NewsContent({ news }: any) {

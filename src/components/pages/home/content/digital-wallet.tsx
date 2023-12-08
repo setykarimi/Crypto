@@ -1,4 +1,4 @@
-import SectionsTitle from "@common/titles/titleSections";
+import SectionsTitle from "@common/titles/section";
 import { img } from "@data";
 
 export default function DigitalWallet() {

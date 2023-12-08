@@ -4,7 +4,7 @@ import { BsHeadphones, BsPersonFill } from "react-icons/bs";
 import { FaHeadphones, FaSignOutAlt } from "react-icons/fa";
 import { HiHome, HiMenu } from "react-icons/hi";
 import { MdInsertChart } from "react-icons/md";
-import { PiPencilSimpleLineFill, PiTelevisionSimpleFill } from "react-icons/pi";
+import { PiPencilSimpleLineFill } from "react-icons/pi";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {

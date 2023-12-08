@@ -1,7 +1,7 @@
-import SectionsTitle from "@common/titles/titleSections";
-import { useCoins } from "@hooks/useCoins";
-import { numberSeprator } from "@utils/numberSeprator";
+import SectionsTitle from "@common/titles/section";
 import { img } from "@data";
+import { useCoins } from "@hooks/use-coins";
+import { numberSeprator } from "@utils/numberSeprator";
 
 export default function CryptoMarketCards() {
   return (
@@ -17,7 +17,7 @@ export default function CryptoMarketCards() {
         <SectionsTitle number={1} title="کریپتر" subTitle="بازارهای">
           <button className="bg-blue-primary rounded-lg flex items-center gap-2 p-2 h-fit md:text-sm text-xs font-semiBold">
             <span className="bg-white text-blue-700 px-2 py-1 rounded-md">
-            دلار $
+              دلار $
             </span>
             <span className="text-white">تتر USDT</span>
           </button>
@@ -50,6 +50,7 @@ const Cards = () => {
 
   return coins?.result?.map((coin: any) => (
     <Card
+      key={coin.name}
       icon={coin.icon}
       name={coin.name}
       price={numberSeprator(Math.round(coin.price))}
@@ -59,7 +60,7 @@ const Cards = () => {
   ));
 };
 
-const Card = (props:any) => {
+const Card = (props: any) => {
   const { icon, name, price, priceChange1h, priceChange1d } = props;
   return (
     <div className="bg-blue-primary lg:p-8 p-4 lg:rounded-[3rem] rounded-3xl flex flex-col items-center lg:gap-4 gap-2">

@@ -1,7 +1,7 @@
-import SectionsTitle from "@common/titles/titleSections";
+import SectionsTitle from "@common/titles/section";
 import { img, static_data } from "@data";
-import NewsCard from "@pagesComp/news/newsContent/newsCard";
-import { NewsType } from "@pagesComp/news/newsContent/type";
+import NewsCard from "@pagesComp/news/news-content/news-card";
+import { NewsType } from "@pagesComp/news/news-content/type";
 import { Link } from "react-router-dom";
 
 export default function NewsSection() {
@@ -28,6 +28,7 @@ export default function NewsSection() {
             .slice(0, 2)
             .map(({ img, title, desc, author, date, view }: NewsType) => (
               <NewsCard
+              key={title}
                 img={img}
                 title={title}
                 desc={desc}

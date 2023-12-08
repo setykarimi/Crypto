@@ -1,6 +1,6 @@
-import SectionsTitle from "@common/titles/titleSections";
+import SectionsTitle from "@common/titles/section";
 import { img } from "@data";
-import BlogCard from "./blogCard";
+import BlogCard from "./blog-card";
 import { Link } from "react-router-dom";
 
 export default function Blogs() {

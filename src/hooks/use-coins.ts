@@ -1,4 +1,4 @@
-import { instance } from "@config/httpService";
+import { instance } from "@config/http-service";
 import useSWR from "swr";
 
 const fetcher = async (params: string) => {

@@ -1,8 +1,8 @@
-import TitlePage from "@common/titles/titlePage";
+import TitlePage from "@common/titles/page";
 import { static_data } from "@data";
-import BannerNews from "@pagesComp/news/banner/bannerNews";
-import InputFilter from "@pagesComp/news/input/inputFilter";
-import NewsContent from "@pagesComp/news/newsContent/news";
+import BannerNews from "@pagesComp/news/banner/banner-news";
+import InputFilter from "@pagesComp/news/input/input-filter";
+import NewsContent from "@pagesComp/news/news-content/news";
 import { useState } from "react";
 
 export default function NewsPage() {

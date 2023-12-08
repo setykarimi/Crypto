@@ -1,4 +1,4 @@
-import { useCoins } from "@hooks/useCoins";
+import { useCoins } from "@hooks/use-coins";
 import { numberSeprator } from "@utils/numberSeprator";
 import TableRow from "./cmponents/row";
 

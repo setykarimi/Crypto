@@ -1,5 +1,5 @@
 import { img } from "@data";
-import SectionsTitle from "@common/titles/titleSections";
+import SectionsTitle from "@common/titles/section";
 import { BsCupHotFill } from "react-icons/bs";
 import { MdPrivacyTip } from "react-icons/md";
 import { RiSecurePaymentFill } from "react-icons/ri";
@@ -50,7 +50,7 @@ const Cards = () => {
   return (
     <div className="grid md:grid-cols-4 grid-cols-2 lg:gap-16 md:gap-6 gap-8">
       {list.map((item) => (
-        <div style={{ color: item.color }}>
+        <div style={{ color: item.color }} key={item.color}>
           {item.icon}
           <span
             className={`block text-center font-bold lg:text-xl text-md border-b-4 pb-4 mt-6`}

@@ -1,4 +1,4 @@
-import { useCoins } from "@hooks/useCoins";
+import { useCoins } from "@hooks/use-coins";
 import { useExchangeStore } from "@store/exchange";
 import LoadingSkeleton from "./loading-skeleton";
 

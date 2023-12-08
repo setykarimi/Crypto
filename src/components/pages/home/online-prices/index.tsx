@@ -1,5 +1,5 @@
-import { OnlinePricesTable } from "@common/table/onlinePrices";
-import SectionsTitle from "@common/titles/titleSections";
+import { OnlinePricesTable } from "@common/table/online-prices";
+import SectionsTitle from "@common/titles/section";
 import { img } from "@data";
 import { BsArrowLeft } from "react-icons/bs";
 import { Link } from "react-router-dom";

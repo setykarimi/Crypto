@@ -1,4 +1,4 @@
-import { useCoins } from "@hooks/useCoins";
+import { useCoins } from "@hooks/use-coins";
 import PieChart from "./pie-chart";
 import LoadingPieChart from "./loading";
 
