@@ -34,11 +34,6 @@ export default function Navbar() {
       icon: <PiPencilSimpleLineFill size={20} />,
     },
     {
-      title: "وبلاگ",
-      to: "/example4",
-      icon: <PiTelevisionSimpleFill size={20} />,
-    },
-    {
       title: "ارتباط با ما",
       to: "/contact-us",
       icon: <FaHeadphones size={20} />,
