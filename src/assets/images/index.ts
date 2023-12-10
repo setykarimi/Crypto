@@ -11,7 +11,7 @@ import news8_img from "@assets/images/news/news8.webp";
 // @@@__________ logos __________@@@
 import logo_red from "@assets/images/logos/logo-red.svg";
 import logo_main from "@assets/images/logos/logo.svg";
-import logo_gray from "@assets/images/logos/logo-Ggray.svg";
+import logo_gray from "@assets/images/logos/logo-gray.svg";
 import logo_white from "@assets/images/logos/logo-white.svg";
 
 // @@@__________ backgrounds __________@@@
