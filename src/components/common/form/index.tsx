@@ -1,19 +1,43 @@
+import emailjs from "@emailjs/browser";
 import { DevTool } from "@hookform/devtools";
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import CustomInput from "./input";
 import CustomTextArea from "./text-area";
 import { FormValuesType } from "./type";
 
-
 export default function ContactUsForm() {
   const form = useForm<FormValuesType>();
 
-  const { register, control, handleSubmit, formState } = form;
+  const { register, control, handleSubmit, formState, reset } = form;
 
   const { errors } = formState;
 
-  const onSubmit = (data: FormValuesType) => {
-    console.log("formSUbmit", data);
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const sendEmail = () => {
+    toast.promise(
+      emailjs.sendForm(
+        "service_5i1c2iw",
+        "template_yezbu8f",
+        formRef.current ?? "",
+        "5hJ0ABe_CQQPkmO31"
+      ),
+      {
+        loading: "شکیبا باشید ...",
+        success: () => {
+          reset();
+          return <b>ایمیل شما با موفقیت ارسال شد.</b>;
+        },
+        error: (
+          <p>
+            <b className="block">متاسفانه خطایی رخ داده است! </b>
+            دوباره تلاش کنید
+          </p>
+        ),
+      }
+    );
   };
 
   return (
@@ -22,7 +46,7 @@ export default function ContactUsForm() {
         خوشحال میشم نظرات و پیشنهاداتتون رو برام بنویسید تا بتونم تو پروژه‌های
         بعدیم ازشون استفاده کنم.
       </h4>
-      <form onSubmit={handleSubmit(onSubmit)} noValidate>
+      <form onSubmit={handleSubmit(sendEmail)} ref={formRef} noValidate>
         <div className="flex flex-col gap-2">
           <CustomInput
             register={register}
