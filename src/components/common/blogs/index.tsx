@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 export default function Blogs() {
   return (
     <div
-      className="lg:mt-24 mt-12 pb-12"
+      className="lg:mt-24 mt-12 pb-12 px-8"
       style={{
         background: `url(${img.crypto_market_bg}) no-repeat center right`,
         backgroundSize: "contain",
       }}
     >
-      <section className="inner-container mx-auto md:px-0 px-2">
+      <section>
         {/* Title Section*/}
         <SectionsTitle number={5} title="کریپتر" subTitle="مقالات">
           <Link to="/learning-articles" className="bg-red-700 rounded-lg py-2 px-4 h-fit md:text-sm text-xs font-semiBold text-white">
