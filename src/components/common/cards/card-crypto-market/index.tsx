@@ -6,13 +6,13 @@ import { numberSeprator } from "@utils/numberSeprator";
 export default function CryptoMarketCards() {
   return (
     <div
-      className="lg:mt-24 mt-12 pb-12"
+      className="mt-12 pb-12 px-8"
       style={{
         background: `url(${img.crypto_market_bg}) no-repeat center right`,
         backgroundSize: "contain",
       }}
     >
-      <section className="inner-container mx-auto md:px-0 px-2">
+      <section className="mx-auto md:px-0 px-2">
         {/* Title Section*/}
         <SectionsTitle number={1} title="کریپتر" subTitle="بازارهای">
           <button className="bg-blue-primary rounded-lg flex items-center gap-2 p-2 h-fit md:text-sm text-xs font-semiBold">
