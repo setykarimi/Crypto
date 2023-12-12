@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer
-      className="inner-container mx-auto mt-8 rounded-2xl bg-blue-primary p-8 text-white"
+      className="inner-container mx-auto mt-8 rounded-2xl bg-blue-primary p-8 text-white mb-4"
       style={{ backgroundImage: `url(${img.footer_bg})` }}
     >
       {/* ___________________ خبرنامه  ___________________ */}

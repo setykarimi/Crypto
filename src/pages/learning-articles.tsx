@@ -6,8 +6,10 @@ export default function LearningArticlesPage() {
   return (
     <>
       <BannerLearningArticles />
-      <Articles />
-      <SafeExchange />
+      <div className="inner-container mx-auto md:px-0 px-2">
+        <Articles />
+        <SafeExchange />
+      </div>
     </>
   );
 }

@@ -9,7 +9,7 @@ export default function OnlinePricesPage() {
     setLimit((prv) => prv + 10);
   };
   return (
-    <>
+    <div className="inner-container mx-auto md:px-0 px-2">
       <CryptoMarketCards />
       <h2 className="text-center lg:mt-24 mt-12 mb-8">
         <span className="block font-black text-5xl text-red-primary">
@@ -29,6 +29,6 @@ export default function OnlinePricesPage() {
         </button>
       </section>
       <SafeExchange />
-    </>
+    </div>
   );
 }

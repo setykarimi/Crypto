@@ -6,8 +6,10 @@ export default function ContactUsPage() {
   return (
     <>
       <ContactUsBanner />
-      <AboutUs />
-      <ContactUsForm />
+      <div className="inner-container mx-auto md:px-0 px-2">
+        <AboutUs />
+        <ContactUsForm />
+      </div>
     </>
   );
 }

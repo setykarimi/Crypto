@@ -15,6 +15,7 @@ export default function HomePage() {
   return (
     <>
       <HomeBanner />
+      <div className="inner-container mx-auto md:px-0 px-2">
       <CryptoMarketCards />
       <OnlinePrices />
       <BannerWhyCrypto />
@@ -26,6 +27,7 @@ export default function HomePage() {
       <NewsSection />
       <SafeExchange />
       <FrequentQuestions />
+      </div>
     </>
   );
 }
