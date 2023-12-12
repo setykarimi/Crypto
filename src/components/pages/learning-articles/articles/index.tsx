@@ -5,7 +5,7 @@ export default function Articles() {
   return (
     <div className="lg:mt-24 mt-12 pb-12">
       {/* Title Section*/}
-      <section className="inner-container mx-auto bg-blue-primary md:p-8 p-4 rounded-xl">
+      <section className="mx-auto bg-blue-primary md:p-8 p-4 rounded-xl">
         <h1 className="text-white text-center flex justify-center items-center">
           <span className="text-3xl block ml-2">مقالات</span>
           <img src={img.logo_white} alt="logo" />
