@@ -1,5 +1,4 @@
 import emailjs from "@emailjs/browser";
-import { DevTool } from "@hookform/devtools";
 import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
@@ -10,7 +9,7 @@ import { FormValuesType } from "./type";
 export default function ContactUsForm() {
   const form = useForm<FormValuesType>();
 
-  const { register, control, handleSubmit, formState, reset } = form;
+  const { register, handleSubmit, formState, reset } = form;
 
   const { errors } = formState;
 
@@ -106,7 +105,6 @@ export default function ContactUsForm() {
           </button>
         </div>
       </form>
-      <DevTool control={control} />
     </div>
   );
 }
