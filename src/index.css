@@ -32,6 +32,7 @@ body, html{
   font-family: 'YekanBakh';
   direction: rtl;
   background: #F6FCFE;
+  scroll-behavior: smooth;
 }
 
 .rtl{
@@ -59,7 +60,7 @@ body, html{
 }
 
 .inner-container{
-  max-width: 1220px;
+  max-width: 1200px;
 }
 
 @media(max-width: 1330px){
@@ -84,7 +85,7 @@ body, html{
 }
 
 .pie_chart .echarts-for-react{
-  height: 90px!important;
+  height: 80px!important;
 }
 .pie_chart .echarts-for-react div{
   height: inherit!important;
