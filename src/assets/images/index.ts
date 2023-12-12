@@ -17,7 +17,6 @@ import logo_white from "@assets/images/logos/logo-white.svg";
 // @@@__________ backgrounds __________@@@
 import footer_bg from "@assets/images/backgrounds/footer-bg.webp";
 import crypto_market_bg from "@assets/images/backgrounds/crypto-market-bg.webp";
-import online_prices_bg from "@assets/images/backgrounds/online-prices-bg.webp";
 import banner_home_bg from "@assets/images/backgrounds/banner-home-bg.webp";
 import online_calculator_bg from "@assets/images/backgrounds/online-calculator-bg.svg";
 import article_card_bg from "@assets/images/backgrounds/article-card-bg.webp";
@@ -66,7 +65,6 @@ export {
   // @@@__________ backgrounds __________@@@
   footer_bg,
   crypto_market_bg,
-  online_prices_bg,
   banner_home_bg,
   online_calculator_bg,
   article_card_bg,
