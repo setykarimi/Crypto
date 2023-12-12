@@ -7,16 +7,19 @@ import { Link } from "react-router-dom";
 export default function NewsSection() {
   return (
     <div
-      className="lg:mt-24 mt-12 pb-12"
+      className="lg:mt-24 mt-12 pb-12 px-8"
       style={{
         background: `url(${img.crypto_market_bg}) no-repeat center right`,
         backgroundSize: "contain",
       }}
     >
-      <section className="inner-container mx-auto md:px-0 px-2">
+      <section>
         {/* Title Section*/}
         <SectionsTitle number={7} title="اخبار" subTitle="آخرین">
-          <Link to="/news" className="bg-red-700 rounded-lg py-2 px-4 h-fit md:text-sm text-xs font-semiBold text-white">
+          <Link
+            to="/news"
+            className="bg-red-700 rounded-lg py-2 px-4 h-fit md:text-sm text-xs font-semiBold text-white"
+          >
             بیشتر ...
           </Link>
         </SectionsTitle>
@@ -28,7 +31,7 @@ export default function NewsSection() {
             .slice(0, 2)
             .map(({ img, title, desc, author, date, view }: NewsType) => (
               <NewsCard
-              key={title}
+                key={title}
                 img={img}
                 title={title}
                 desc={desc}
