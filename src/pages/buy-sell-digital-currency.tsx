@@ -7,7 +7,7 @@ import Transactions from "@pagesComp/buy-sell-digital-currency/transactions";
 
 export default function BuySellDigitalCurrency() {
   return (
-    <div className="inner-container mx-auto md:px-0 px-2 mx-auto mt-8 grid lg:grid-cols-4 grid-cols-1 gap-4">
+    <div className="inner-container mx-auto md:px-0 px-2 mt-8 grid lg:grid-cols-4 grid-cols-1 gap-4">
       <div className="flex flex-col gap-4">
         <MyInfoCard />
         <Calculator customClassName="bg-white p-4 rounded-2xl card-shadow w-full relative flex flex-col" />
