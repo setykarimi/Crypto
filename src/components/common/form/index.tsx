@@ -40,7 +40,7 @@ export default function ContactUsForm() {
   };
 
   return (
-    <div className="inner-container mx-auto mt-12 bg-white rounded-2xl card-shadow p-8">
+    <div className="mt-12 bg-white rounded-2xl card-shadow p-8">
       <h4 className="text-center mb-4 font-bold text-gray-800 text-lg">
         خوشحال میشم نظرات و پیشنهاداتتون رو برام بنویسید تا بتونم تو پروژه‌های
         بعدیم ازشون استفاده کنم.
