@@ -21,13 +21,13 @@ export default function FrequentQuestions() {
   ];
   return (
     <div
-      className="lg:mt-24 mt-12 pb-12 md:pt-24 pt-8 md:w-full w-[95%] mx-auto md:rounded-none rounded-3xl"
+      className="px-8 lg:mt-24 mt-12 pb-12 md:pt-24 pt-8 md:w-full w-[95%] mx-auto md:rounded-none rounded-3xl"
       style={{
         background: `url(${img.crypto_market_bg}) no-repeat center top`,
         backgroundSize: "cover",
       }}
     >
-      <section className="inner-container mx-auto px-0">
+      <section>
         {/* Title Section*/}
         <SectionsTitle number={8} title="متداول" subTitle="سوالات">
           <Link to="/contact-us" className="bg-red-700 rounded-lg py-2 px-4 h-fit md:text-sm text-xs font-semiBold text-white">
