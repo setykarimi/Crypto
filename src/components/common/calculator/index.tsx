@@ -26,7 +26,7 @@ export default function Calculator({ customClassName }: CalculatorPropsType) {
       className={`${
         customClassName
           ? customClassName
-          : "border-2 border-blue-300 rounded-3xl px-4 py-6 lg:w-7/12 md:w-9/12 w-full mx-auto flex flex-col relative z-1"
+          : "border-2 backdrop-blur-xl border-blue-300 rounded-3xl px-4 py-6 lg:w-7/12 md:w-9/12 w-full mx-auto flex flex-col relative z-1"
       }`}
       style={{
         background: customClassName
