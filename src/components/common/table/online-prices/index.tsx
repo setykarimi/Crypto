@@ -28,7 +28,7 @@ export const OnlinePricesTable = ({ limit = 4 }: { limit?: number }) => {
   }
 
   return (
-    <div className="grid md:grid-cols-5 grid-cols-3 bg-white rounded-3xl md:h-auto md:max-h-max max-h-[30rem] overflow-auto">
+    <div className="grid md:grid-cols-5 grid-cols-3 bg-white rounded-3xl md:h-auto md:max-h-max max-h-[30rem] overflow-auto card-shadow px-8">
       <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
         رمز ارزها
       </span>
