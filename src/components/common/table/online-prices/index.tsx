@@ -7,7 +7,7 @@ export const OnlinePricesTable = ({ limit = 4 }: { limit?: number }) => {
 
   if (isLoading) {
     return (
-      <div className="md:col-span-5 col-span-3 grid md:grid-cols-5 grid-cols-3 border-b border-b-blue-400 gap-16 px-8 py-4">
+      <div className="md:col-span-5 col-span-3 grid md:grid-cols-5 grid-cols-3 border-b border-b-blue-400 gap-16 lg:px-8 md:px-4 px-2 py-4">
         <span className="md:w-16 w-10 md:h-16 h-10 rounded-full bg-gray-100 m-auto"></span>
         <span className="bg-gray-100 h-4 rounded-lg w-full m-auto"></span>
         <span className="bg-gray-100 h-4 rounded-lg w-full m-auto"></span>
@@ -28,7 +28,7 @@ export const OnlinePricesTable = ({ limit = 4 }: { limit?: number }) => {
   }
 
   return (
-    <div className="grid md:grid-cols-5 grid-cols-3 bg-white rounded-3xl md:h-auto md:max-h-max max-h-[30rem] overflow-auto card-shadow px-8">
+    <div className="grid md:grid-cols-5 grid-cols-3 bg-white rounded-3xl md:h-auto md:max-h-max max-h-[30rem] overflow-auto card-shadow lg:px-8 md:px-4 px-2">
       <span className="text-center block text-gray-400 font-semiBold text-lg py-4 border-b border-b-blue-100">
         رمز ارزها
       </span>

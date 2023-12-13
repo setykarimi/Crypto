@@ -6,7 +6,7 @@ import { numberSeprator } from "@utils/numberSeprator";
 export default function CryptoMarketCards() {
   return (
     <div
-      className="mt-12 pb-12 px-8"
+      className="mt-12 pb-12 lg:px-8 md:px-4 px-2"
       style={{
         background: `url(${img.crypto_market_bg}) no-repeat center right`,
         backgroundSize: "contain",

@@ -1,6 +1,6 @@
 export default function Warning() {
   return (
-    <div className="bg-red-500 lg:mt-24 mt-12 px-8 rounded-xl">
+    <div className="bg-red-500 lg:mt-24 mt-12 lg:px-8 px-4 rounded-xl">
       <section>
         <p className="text-justify text-lg text-white font-semiBold py-6 leading-loose">
           خواهشمند است در هنگام خرید و فروش ارزهای دیجیتال، به اندازه کافی

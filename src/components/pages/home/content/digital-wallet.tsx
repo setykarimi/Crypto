@@ -4,7 +4,7 @@ import { img } from "@data";
 export default function DigitalWallet() {
   return (
     <div
-      className="lg:mt-24 mt-12 pt-12 pb-12 px-8"
+      className="lg:mt-24 mt-12 pt-12 pb-12 lg:px-8 md:px-4 px-2"
       style={{
         background: `url(${img.crypto_market_bg}) no-repeat center right`,
         backgroundSize: "cover",

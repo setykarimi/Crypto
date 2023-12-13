@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function OnlinePrices() {
   return (
-    <div className="mt-12 pb-12 md:pt-24 px-8 md:w-full w-[95%] mx-auto md:rounded-none rounded-3xl">
+    <div className="mt-12 pb-12 md:pt-24 lg:px-8 md:px-4 px-2 md:w-full w-[95%] mx-auto md:rounded-none rounded-3xl">
       <section>
         {/* Title Section*/}
         <SectionsTitle number={2} title="آنلاین" subTitle="قیمت‌های">
