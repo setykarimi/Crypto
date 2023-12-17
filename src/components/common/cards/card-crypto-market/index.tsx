@@ -2,8 +2,13 @@ import SectionsTitle from "@common/titles/section";
 import { img } from "@data";
 import { useCoins } from "@hooks/use-coins";
 import { numberSeprator } from "@utils/numberSeprator";
+import { useState } from "react";
+import { CryptoCard } from "./card";
+import { LoadingCard } from "./loading-card";
 
 export default function CryptoMarketCards() {
+  const [moneyType, setMonyType] = useState<boolean>(true);
+
   return (
     <div
       className="mt-12 pb-12 lg:px-8 md:px-4 px-2"
@@ -15,18 +20,30 @@ export default function CryptoMarketCards() {
       <section className="mx-auto md:px-0 px-2">
         {/* Title Section*/}
         <SectionsTitle number={1} title="کریپتر" subTitle="بازارهای">
-          <button className="bg-blue-primary rounded-lg flex items-center gap-2 p-2 h-fit md:text-sm text-xs font-semiBold">
-            <span className="bg-white text-blue-700 px-2 py-1 rounded-md">
+          <div className="bg-blue-primary rounded-lg flex items-center gap-2 p-2 h-fit md:text-sm text-xs font-semiBold">
+            <button
+              className={`px-2 py-1 rounded-md ${
+                moneyType ? "bg-white text-blue-700" : "text-white"
+              }`}
+              onClick={() => setMonyType(true)}
+            >
               دلار $
-            </span>
-            <span className="text-white">تتر USDT</span>
-          </button>
+            </button>
+            <button
+              className={`px-2 py-1 rounded-md ${
+                !moneyType ? "bg-white text-blue-700" : "text-white"
+              }`}
+              onClick={() => setMonyType(false)}
+            >
+              تتر USDT
+            </button>
+          </div>
         </SectionsTitle>
         {/* End Title Section*/}
 
         {/* Cards */}
         <section className="grid md:grid-cols-4 grid-cols-2 xl:gap-12 lg:gap-8 gap-4">
-          <Cards />
+          <Cards moneyType={moneyType} />
         </section>
         {/* End Card Section */}
       </section>
@@ -34,8 +51,10 @@ export default function CryptoMarketCards() {
   );
 }
 
-const Cards = () => {
-  const { data: coins, isLoading } = useCoins("/coins?&limit=4&page=2");
+const Cards = ({ moneyType }: { moneyType: boolean }) => {
+  const { data: coins, isLoading } = useCoins(
+    `/coins?&limit=4&page=${moneyType ? "2" : "3"}`
+  );
 
   if (isLoading) {
     return (
@@ -49,7 +68,7 @@ const Cards = () => {
   }
 
   return coins?.result?.map((coin: any) => (
-    <Card
+    <CryptoCard
       key={coin.name}
       icon={coin.icon}
       name={coin.name}
@@ -58,37 +77,4 @@ const Cards = () => {
       priceChange1d={coin.priceChange1d}
     />
   ));
-};
-
-const Card = (props: any) => {
-  const { icon, name, price, priceChange1h, priceChange1d } = props;
-  return (
-    <div className="bg-blue-primary lg:p-8 p-4 lg:rounded-[3rem] rounded-3xl flex flex-col items-center lg:gap-4 gap-2">
-      <img
-        src={icon}
-        className="lg:h-24 h-16 lg:w-24 w-16 rounded-full"
-        alt="icon"
-      />
-      <span className="text-orange-primary gap-4 font-bold text-lg block">
-        {name}
-      </span>
-      <span className="text-white block lg:text-xl text-lg lg:font-bold">
-        {price} دلار
-      </span>
-      <span className="text-green-primary block lg:font-bold lg:text-base text-sm ltr">
-        {priceChange1h} ({priceChange1d})
-      </span>
-    </div>
-  );
-};
-
-const LoadingCard = () => {
-  return (
-    <div className="bg-blue-primary lg:p-8 p-4 lg:rounded-[3rem] rounded-3xl flex flex-col items-center lg:gap-8 gap-4">
-      <div className="lg:h-24 h-16 lg:w-24 w-16 rounded-full bg-gray-100" />
-      <span className="block bg-gray-100 h-2 w-2/3 rounded-lg"></span>
-      <span className="block bg-gray-100 h-2 w-2/3 rounded-lg"></span>
-      <span className="block bg-gray-100 h-2 w-2/3 rounded-lg"></span>
-    </div>
-  );
 };
