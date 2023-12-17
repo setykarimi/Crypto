@@ -1,7 +1,7 @@
 import SectionsTitle from "@common/titles/section";
 import { img } from "@data";
-import BlogCard from "./blog-card";
 import { Link } from "react-router-dom";
+import BlogCard from "./blog-card";
 
 export default function Blogs() {
   return (
@@ -15,14 +15,17 @@ export default function Blogs() {
       <section>
         {/* Title Section*/}
         <SectionsTitle number={5} title="کریپتر" subTitle="مقالات">
-          <Link to="/learning-articles" className="bg-red-700 rounded-lg py-2 px-4 h-fit md:text-sm text-xs font-semiBold text-white">
+          <Link
+            to="/learning-articles"
+            className="bg-red-700 rounded-lg py-2 px-4 h-fit md:text-sm text-xs font-semiBold text-white"
+          >
             بیشتر ...
           </Link>
         </SectionsTitle>
         {/* End Title Section*/}
 
         {/* Cards */}
-        <section className="grid lg:grid-cols-2 grid-cols-1 xl:gap-12 gap-8">
+        <section className="md:grid lg:grid-cols-2 md:grid-cols-1 flex overflow-x-auto lg:pb-0 pb-4 xl:gap-12 lg:gap-8 gap-4">
           <BlogCard />
           <BlogCard />
         </section>
