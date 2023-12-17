@@ -1,9 +1,10 @@
 import { img } from "@data";
+import { FaArrowDownLong } from "react-icons/fa6";
 
 export default function HomeBanner() {
   return (
     <div
-      className="-mt-[5.6rem] z-0 relative xl:pb-28 pb-16 lg:px-0 px-4 rounded-2xl"
+      className="header__banner"
       style={{
         background: `url(${img.banner_home_bg}) no-repeat center bottom`,
         backgroundSize: "cover",
@@ -17,9 +18,11 @@ export default function HomeBanner() {
           className="xl:w-fit lg:w-96 md:w-80 w-56 mr-auto"
         />
       </div>
-      <button className="absolute bottom-0 mx-auto left-0 right-0 w-fit px-8 py-2">
-        <span className="xl:h-8 h-4 bg-gray-400 w-[2px] rounded-full block"></span>
-      </button>
+      <a href="#online-prices" className="absolute bottom-0 mx-auto left-0 right-0 w-fit px-8 py-2">
+        <span className="rounded-full block text-gray-400">
+          <FaArrowDownLong size={24} />
+        </span>
+      </a>
     </div>
   );
 }
@@ -44,7 +47,7 @@ const ContentTitle = () => {
         مطمئن‌ترین ارز دیجیتال در ایران
       </span>
       <a
-        href="#crypter-market"
+        href="#online-calulator"
         className="block px-4 w-fit  md:text-base text-sm border-2 border-yellow-primary py-2 rounded-xl text-yellow-primary font-extraBold mt-8"
       >
         بزن بریم برای دریافت جایزه
