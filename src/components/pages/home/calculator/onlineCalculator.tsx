@@ -5,6 +5,7 @@ import Calculator from "@common/calculator";
 export default function OnlineCalculator() {
   return (
     <div
+    id="online-calulator"
       className="lg:mt-24 mt-12 pb-12 lg:px-8 md:px-4 px-2"
       style={{
         background: `url(${img.online_calculator_bg}) no-repeat center left`,
