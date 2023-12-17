@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function NewsSection() {
   return (
     <div
-      className="lg:mt-24 mt-12 pb-12 px-8"
+      className="lg:mt-24 mt-12 pb-12 lg:px-8 md:px-4 px-2"
       style={{
         background: `url(${img.crypto_market_bg}) no-repeat center right`,
         backgroundSize: "contain",
@@ -26,7 +26,7 @@ export default function NewsSection() {
         {/* End Title Section*/}
 
         {/* Cards */}
-        <section className="grid lg:grid-cols-2 grid-cols-1 xl:gap-12 gap-8">
+        <section className="md:grid lg:grid-cols-2 md:grid-cols-1 flex overflow-x-auto lg:pb-0 pb-4 xl:gap-12 lg:gap-8 gap-4">
           {static_data.news_data.news
             .slice(0, 2)
             .map(({ img, title, desc, author, date, view }: NewsType) => (
