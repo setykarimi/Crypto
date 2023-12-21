@@ -2,6 +2,7 @@ import { img } from "@data";
 import { useState } from "react";
 import { BsHeadphones, BsPersonFill } from "react-icons/bs";
 import { FaHeadphones, FaSignOutAlt } from "react-icons/fa";
+import { FaNewspaper } from "react-icons/fa6";
 import { HiHome, HiMenu } from "react-icons/hi";
 import { MdInsertChart } from "react-icons/md";
 import { PiPencilSimpleLineFill } from "react-icons/pi";
@@ -32,6 +33,11 @@ export default function Navbar() {
       title: "مقالات آموزشی",
       to: "/learning-articles",
       icon: <PiPencilSimpleLineFill size={20} />,
+    },
+    {
+      title: "اخبار",
+      to: "/news",
+      icon: <FaNewspaper size={20} />,
     },
     {
       title: "ارتباط با ما",
