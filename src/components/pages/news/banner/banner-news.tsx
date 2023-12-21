@@ -3,7 +3,7 @@ import { img } from '@data';
 export default function BannerNews() {
   return (
     <div
-      className="-mt-[5.6rem] z-0 relative xl:pb-32 pb-20 lg:px-0 px-4 rounded-br-3xl rounded-bl-3xl"
+      className="header__banner"
       style={{
         background: "linear-gradient(115deg, #2E48CD 12.25%, #1F237E 92.53%)",
       }}
