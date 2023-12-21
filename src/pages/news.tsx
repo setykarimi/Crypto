@@ -13,14 +13,15 @@ export default function NewsPage() {
   return (
     <>
       <BannerNews />
-      <section className="inner-container mx-auto md:px-0 px-2">
-        <TitlePage />
-        <InputFilter setFilteredNews={setFilteredNews} />
-
+      <div className="inner-container mx-auto md:px-0 px-2">
+        <section className="inner-container mx-auto px-0 grid md:grid-cols-2 gap-8 mt-20 items-center">
+          <TitlePage />
+          <InputFilter setFilteredNews={setFilteredNews} />
+        </section>
         <NewsContent
           news={filteredNews.length ? filteredNews : static_data.news_data.news}
         />
-      </section>
+      </div>
     </>
   );
 }
