@@ -1,8 +1,10 @@
 import { BsCalendarDateFill } from "react-icons/bs";
 import { FaPen } from "react-icons/fa";
 import { HiEye } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 interface PropsType {
+  id: number;
   img: string;
   title: string;
   desc: string;
@@ -12,7 +14,7 @@ interface PropsType {
 }
 
 export default function NewsCard(props: PropsType) {
-  const { img, title, desc, author, date, view } = props;
+  const { img, title, desc, author, date, view, id } = props;
   return (
     <div
       className="bg-white rounded-xl flex relative"
@@ -23,19 +25,25 @@ export default function NewsCard(props: PropsType) {
     >
       <div className="p-4 flex flex-col">
         <div className="md:grid grid-cols-8 flex flex-col gap-4">
-          <div className="md:col-span-3">
+          <div className="md:col-span-3 relative">
             <img
               src={img ?? img}
               alt={title}
               className="md:h-36 h-28 w-full object-cover rounded-xl "
             />
+            <Link
+              to={`/news/detail/${id}`}
+              className="absolute -mt-8 text-xs left-2 bg-blue-primary text-white px-2 py-1 rounded-md"
+            >
+              مشاهده بیشتر
+            </Link>
           </div>
 
           <div className="md:col-span-5 flex flex-col gap-2">
             <span className="block font-extraBold text-red-primary md:text-xl text-base">
               {title}
             </span>
-            <p className="text-gray-400 font-semiBold text-justify md:text-base text-sm">
+            <p className="text-gray-400 font-semiBold text-justify md:text-base text-sm line-clamp-3">
               {desc}
             </p>
 
