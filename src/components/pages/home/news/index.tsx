@@ -29,8 +29,9 @@ export default function NewsSection() {
         <section className="md:grid lg:grid-cols-2 md:grid-cols-1 flex overflow-x-auto lg:pb-0 pb-4 xl:gap-12 lg:gap-8 gap-4">
           {static_data.news_data.news
             .slice(0, 2)
-            .map(({ img, title, desc, author, date, view }: NewsType) => (
+            .map(({ img, title, desc, author, date, view, id }: NewsType) => (
               <NewsCard
+              id={id}
                 key={title}
                 img={img}
                 title={title}
