@@ -1,4 +1,5 @@
 export type NewsInitType = {
+  id: number | string;
   img: string;
   title: string;
   desc: string;
