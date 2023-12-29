@@ -79,7 +79,7 @@ export default function NewsCard(props: PropsType) {
           </div>
         </div>
       </div>
-      <div className="md:w-11/12 h-[2px] m-auto rounded-full bg-red-primary absolute top-0 right-0 left-0"></div>
+      <div className="w-11/12 h-[2px] m-auto rounded-full bg-red-primary absolute top-0 right-0 left-0"></div>
     </div>
   );
 }
