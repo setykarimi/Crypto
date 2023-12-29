@@ -1,3 +1,4 @@
+import NewsCommentForm from "@common/form/news-comment/inedex";
 import { static_data } from "@data";
 import BreadCrumbs from "@pagesComp/news-detail/bread-crumbs";
 import NewDetails from "@pagesComp/news-detail/details";
@@ -31,6 +32,8 @@ export default function NewsDetail() {
       <p className="text-gray-600 leading-loose text-justify">
         {news_data.desc}
       </p>
+
+      <NewsCommentForm news_id={`${news_data.id} : ${news_data.title}`} />
     </div>
   );
 }
