@@ -1,4 +1,4 @@
-import ContactUsForm from "@common/form";
+import ContactUsForm from "@common/form/contact-us";
 import AboutUs from "@pagesComp/contact-us/about-us";
 import ContactUsBanner from "@pagesComp/contact-us/banner";
 
