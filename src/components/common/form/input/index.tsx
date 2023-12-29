@@ -27,9 +27,9 @@ export default function CustomInput({
               }
         )}
       />
-      <p className="text-xs text-red-primary mt-1 font-semiBold">
+      <span className="text-xs text-red-primary mt-1 font-semiBold">
         {errors[name]?.message}
-      </p>
+      </span>
     </div>
   );
 }
