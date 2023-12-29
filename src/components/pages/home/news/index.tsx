@@ -31,7 +31,7 @@ export default function NewsSection() {
             .slice(0, 2)
             .map(({ img, title, desc, author, date, view, id }: NewsType) => (
               <NewsCard
-              id={id}
+                id={id}
                 key={title}
                 img={img}
                 title={title}
