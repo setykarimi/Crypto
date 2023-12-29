@@ -17,7 +17,7 @@ export default function OnlinePricesPage() {
         </span>
         <span className="font-bold text-2xl ml-24 -mt-3 block">قیمت‌های</span>
       </h2>
-      <section className="inner-container mx-auto md:px-0 px-2 mb-12 flex flex-col">
+      <section className="inner-container mx-auto mb-12 flex flex-col">
         <div className="shadow-lg bg-white rounded-3xl">
           <OnlinePricesTable limit={limit} />
         </div>
