@@ -38,4 +38,16 @@ export const learning_articles: ArticlesInitType = [
     author: 276,
     view: 4897,
   },
+  {
+    title: "معامله و ترید",
+    img: img.article1_img,
+    author: 250,
+    view: 5241,
+  },
+  {
+    title: "کیف پول (والت)",
+    img: img.news1_img,
+    author: 324,
+    view: 4567,
+  },
 ];
