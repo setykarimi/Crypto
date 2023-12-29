@@ -9,7 +9,7 @@ export default function CustomTextArea({
   validationFormat,
 }: CustomInputType) {
   return (
-    <div className="mb-4">
+    <div>
       <textarea
         rows={8}
         cols={8}
@@ -29,9 +29,9 @@ export default function CustomTextArea({
               }
         )}
       />
-      <p className="text-xs text-red-primary mt-1 font-semiBold">
+      <span className="text-xs text-red-primary font-semiBold">
         {errors[name]?.message}
-      </p>
+      </span>
     </div>
   );
 }
