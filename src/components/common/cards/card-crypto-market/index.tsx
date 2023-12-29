@@ -17,7 +17,7 @@ export default function CryptoMarketCards() {
         backgroundSize: "contain",
       }}
     >
-      <section className="mx-auto md:px-0 px-2">
+      <section className="mx-auto">
         {/* Title Section*/}
         <SectionsTitle number={1} title="کریپتر" subTitle="بازارهای">
           <div className="bg-blue-primary rounded-lg flex items-center gap-2 p-2 h-fit md:text-sm text-xs font-semiBold">
