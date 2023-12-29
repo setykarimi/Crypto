@@ -1,5 +1,5 @@
 export type NewsInitType = {
-  id: number;
+  id: string;
   img: string;
   title: string;
   desc: string;

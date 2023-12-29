@@ -4,7 +4,7 @@ import { HiEye } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 interface PropsType {
-  id: number;
+  id: string;
   img: string;
   title: string;
   desc: string;
