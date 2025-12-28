@@ -4,12 +4,12 @@ import ReactEcharts from "echarts-for-react";
 import { IoMdArrowRoundDown, IoMdArrowRoundUp } from "react-icons/io";
 
 export default function PieChart({ data }: any) {
-  const customTime = useWallet((state) => state.time);
+  const { time } = useWallet();
 
   const priceColor =
-    data[customTime] > 0 && data[customTime] < 1
+    data[time] > 0 && data[time] < 1
       ? "#FF8008"
-      : data[customTime] < 0
+      : data[time] < 0
       ? "#EC2500"
       : "#35E926 ";
 
@@ -28,7 +28,7 @@ export default function PieChart({ data }: any) {
         color: colorPalette,
         data: [
           {
-            value: data[customTime],
+            value: data[time],
             name: data?.name,
           },
           { value: 100, name: "total supply" },
@@ -42,7 +42,7 @@ export default function PieChart({ data }: any) {
       <div className="relative pie_chart">
         <ReactEcharts option={option} className="-mt-4" />
         <span className="absolute top-0 bottom-0 m-auto left-0 right-0 block w-fit h-fit md:text-xs text-sm font-bold text-gray-900 ltr">
-          {data[customTime]}%
+          {data[time]}%
         </span>
       </div>
 
@@ -54,10 +54,10 @@ export default function PieChart({ data }: any) {
         </span>
         <span
           className={`${
-            data[customTime] > 0 ? "text-green-primary" : "text-red-primary"
+            data[time] > 0 ? "text-green-primary" : "text-red-primary"
           } `}
         >
-          {data[customTime] > 0 ? <IoMdArrowRoundUp /> : <IoMdArrowRoundDown />}
+          {data[time] > 0 ? <IoMdArrowRoundUp /> : <IoMdArrowRoundDown />}
         </span>
       </div>
     </div>
